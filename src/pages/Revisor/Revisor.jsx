@@ -3,9 +3,40 @@ import revisor from "../../assets/revisorløsninger.jpg";
 import regnskab from "../../assets/regnskab.png";
 import bogholder from "../../assets/bogholderi.jpg";
 import { FaBoxOpen, FaDatabase, FaCalculator, FaCheckCircle, FaGlobe, FaShieldAlt, FaChartBar, FaHeadset   } from "react-icons/fa";
+import React, { useState } from 'react';
 
 
 export default function Revisor() {
+
+
+  const [showPopup, setShowPopup] = useState(false);
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    company: '',
+    message: ''
+  });
+
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData(prevState => ({
+      ...prevState,
+      [name]: value
+    }));
+  };
+
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const { name, email, phone, company, message } = formData;
+    const mailtoLink = `mailto:info@saldi.dk?subject=Kontaktforespørgsel&body=Navn: ${name}%0AEmail: ${email}%0ATlf. nummer: ${phone}%0AFirma: ${company}%0A%0AMeddelelse: ${message}`;
+    window.location.href = mailtoLink;
+    setShowPopup(false); 
+  };
+
+
     return (
         <div className="revisor-container">
 
@@ -102,16 +133,74 @@ export default function Revisor() {
 
   
     <section className="kontakt">
-      <div className="kontakt-container">
-        <div className="kontakt-text">
-          <h1>Vi håber du vil bruge Saldi til dit bogholderi</h1>
-          <p>Kom i gang med revisorløsningen i dag, eller prøv vores gratis regnskab, og se om det er noget for dig!</p>
+        <div className="kontakt-container">
+          <div className="kontakt-text">
+            <h1>Vi håber du vil bruge Saldi til dit bogholderi</h1>
+            <p>Kom i gang med revisorløsningen i dag, eller prøv vores gratis regnskab, og se om det er noget for dig!</p>
+          </div>
+          <button className="kontakt-button" onClick={() => setShowPopup(true)}>
+            Bliv kontaktet
+          </button>
         </div>
-        <button className="kontakt-button">Bliv kontaktet</button>
+      </section>
+
+      
+
+      {showPopup && (
+        <div className="popup-overlay">
+          <div className="popup-content">
+            <h3 className="form-h1">Kontakt</h3>
+            <p className="form-h1">Udfyld formularen og tryk "send"</p>
+            <form onSubmit={handleSubmit}>
+              <input
+                type="text"
+                name="name"
+                placeholder="Fulde navn"
+                value={formData.name}
+                onChange={handleInputChange}
+                required
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="Email"
+                value={formData.email}
+                onChange={handleInputChange}
+                required
+              />
+              <input
+                type="text"
+                name="phone"
+                placeholder="Telefonnummer"
+                value={formData.phone}
+                onChange={handleInputChange}
+                required
+              />
+              <input
+                type="text"
+                name="company"
+                placeholder="Firma (valgfrit)"
+                value={formData.company}
+                onChange={handleInputChange}
+              />
+              <textarea
+                name="message"
+                placeholder="Skriv lidt om dit behov"
+                value={formData.message}
+                onChange={handleInputChange}
+                required
+              />
+              <button type="submit">Send</button>
+              <button type="button" className="close-button" onClick={() => setShowPopup(false)}>
+                Luk
+              </button>
+              <p>Vi kontakter dig hurtigst muligt</p>
+            </form>
+          </div>
+        </div>
+      )}
       </div>
-    </section>
- 
-    </div>
+
     );
 };
 
