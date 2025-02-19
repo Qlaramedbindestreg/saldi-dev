@@ -88,7 +88,7 @@ export default function CRMSystem() {
 
 
       <section className="crm-kunde-module">
-        <h2>Effektiv styring af kunderelationer</h2>
+  
         <p>
           Med Saldi kan din virksomhed samle alle interne processer ét sted. 
           Vores CRM-system sikrer overblik over aftaler, kundedata og 
@@ -139,6 +139,7 @@ export default function CRMSystem() {
         style={{ backgroundImage: `url(${office})` }}
       >
         <div className="form-background">
+        <h1>Få en uforpligtende demo</h1>
           <form className="booking-form" onSubmit={handleSubmit}>
             <label>
               <input
