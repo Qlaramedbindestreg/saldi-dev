@@ -57,7 +57,7 @@ export default function Blog() {
 
 
       <div className="update-item" id='mobile-pay'>
-        <h3>Ny opdatering d. 12.04.2024 kl. 23:42</h3>
+     
         <div className="update-content">
         <img src={mobilepay} alt="mobilepay" />
         <div className='update-text'>
@@ -68,7 +68,7 @@ export default function Blog() {
       </div>
 
       <div className="update-item">
-  <h3>Ny opdatering</h3>
+
   <div className="update-content">
     <img src={loppe} alt="loppe" className="update-image" />
     <div className="update-text">
