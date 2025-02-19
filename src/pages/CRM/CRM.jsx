@@ -121,13 +121,10 @@ export default function CRMSystem() {
       <section className="additional-info">
       <h1 className="info-title">Vælg det rigtige CRM system</h1>
       
-  
           <p>
           Alle virksomheders behov er forskellige. Saldi har i udviklet et CRM-system som er lige til at gå til. Vi bruger det selv til alle vores kunder, både salg & support sager. Derfor har vi udviklet det på en måde som både er nem at lære & nem at benytte.
           </p>
       
-    </section>
-
      <section className="crm-grid">
       {gridItems.map((item, index) => (
         <div className="grid-item" key={index}>
@@ -137,14 +134,17 @@ export default function CRMSystem() {
         </div>
       ))}
     </section>
+    </section>
+
  
     
-
+    <div className='form-div' id="form-section"></div>
       <section 
         className="form-section"
-        id="form-section"
+      
         style={{ backgroundImage: `url(${office})` }}
       >
+              <div className="form-overlay"></div>
         <div className="form-background">
         <h1>Få en uforpligtende demo</h1>
           <form className="booking-form" onSubmit={handleSubmit}>
