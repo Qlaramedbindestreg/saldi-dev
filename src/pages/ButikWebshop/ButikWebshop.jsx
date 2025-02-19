@@ -8,7 +8,7 @@ import { FaChartLine, FaCloud, FaCheckCircle, FaWarehouse, FaChartBar, FaFileInv
 
 import butikWebshopBaggrund from '../../assets/butik-webshop.jpg';
 import visa from  '../../assets/Visa-logo.png'; 
-import mastercard from  '../../assets/Mastercard-logo.png'; 
+import mastercard from  '../../assets/Mastercard-Logo.png'; 
 import maestro from  '../../assets/Maestro-logo.svg'; 
 import applePay from  '../../assets/Apple-Pay.png'; 
 import googlePay from  '../../assets/Google-pay-logo.png'; 
