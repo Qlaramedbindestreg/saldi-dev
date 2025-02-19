@@ -2,6 +2,7 @@ import { FaCashRegister, FaChartLine, FaCogs, FaExpandArrowsAlt, FaHeadset } fro
 import posImage from '../../assets/pos.jpg'; 
 import { useState } from "react";
 import './POSsystem.scss';
+import pos from '../../assets/pos-baggrund.jpg';
 
 export default function POSSystem() {
     const [showPopup, setShowPopup] = useState(false);
@@ -27,10 +28,16 @@ export default function POSSystem() {
         window.location.href = mailtoLink;
     };
   return (
+    
     <div className="pos-guide">
-      <div className="pos-header">
-        <h1>Hvordan vælger du det rette POS-system til din forretning?</h1>
-      </div>
+<div className="pos-header">
+  <div className="pos-overlay"></div> 
+  <div className="pos-content">
+    <h1>Hvordan vælger du det rette POS-system til din forretning?</h1>
+  </div>
+</div>
+
+  
 
       <section className="intro-section">
         <h2>Vigtigheden af et POS-system</h2>
@@ -90,7 +97,12 @@ export default function POSSystem() {
                 <div className="cta-text">
                     <h2>Få et komplet POS-system til din forretning</h2>
                     <p>
-                        Hos Saldi tilbyder vi skræddersyede POS-systemer udviklet til forskelligartede virksomheder – fx detailhandlere, restauranter, genbrugsbutikker og kædeforretninger. Med Saldi får du nemlig ikke bare adgang til avanceret hardware som skærme, pc'er, pengeskuffer og bonprintere; du får også adgang til software, der kan skræddersyes nøjagtigt til dine behov.
+                    Hos Saldi tilbyder vi skræddersyede POS-systemer udviklet til forskelligartede virksomheder – fx detailhandlere, restauranter, genbrugsbutikker og kædeforretninger. Med Saldi får du nemlig ikke bare adgang til avanceret hardware som skærme, pc'er, pengeskuffer og bonprintere; du får også adgang til software, der kan skræddersyes nøjagtigt til dine behov.
+
+<br />
+<br />
+
+              Med næsten 20 års erfaring i branchen har vi udviklet en række specialløsninger, der imødekommer specifikke industribehov. Uanset om du driver en restaurant, en tøjforretning, et bygge- eller håndværkerfirma, en cykelforretning med værksted eller en genbrugsforretning, har Saldi den erfaring og teknologi, der er nødvendig for at støtte din virksomheds drift og udvikling.
                     </p>
                     <button className="cta-button" onClick={() => setShowPopup(true)}>
                         Tryk her for at få et tilbud
