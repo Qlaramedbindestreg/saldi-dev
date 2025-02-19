@@ -21,35 +21,29 @@ const testimonials = [
 ];
 
 export default function Testimonials() {
-  const [currentIndex, setCurrentIndex] = useState(1);
+  const [currentIndex, setCurrentIndex] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
   const trackRef = useRef(null);
 
   useEffect(() => {
-    if (currentIndex === 0) {
-      setTimeout(() => {
-        setIsTransitioning(false);
-        setCurrentIndex(testimonials.length);
-      }, 500);
-    } else if (currentIndex === testimonials.length + 1) {
-      setTimeout(() => {
-        setIsTransitioning(false);
-        setCurrentIndex(1);
-      }, 500);
+    if (currentIndex < 0) {
+      setCurrentIndex(testimonials.length - 1);  // Go to last testimonial when going back past the first one
+    } else if (currentIndex >= testimonials.length) {
+      setCurrentIndex(0);  // Go to first testimonial when going past the last one
     }
   }, [currentIndex]);
 
   const goToNext = () => {
     if (!isTransitioning) {
       setIsTransitioning(true);
-      setCurrentIndex((prevIndex) => prevIndex + 1);
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length); // Move to next testimonial, loop back to 0 when reaching the end
     }
   };
 
   const goToPrevious = () => {
     if (!isTransitioning) {
       setIsTransitioning(true);
-      setCurrentIndex((prevIndex) => prevIndex - 1);
+      setCurrentIndex((prevIndex) => (prevIndex - 1 + testimonials.length) % testimonials.length); // Move to previous testimonial, loop back to last when reaching the beginning
     }
   };
 
@@ -66,27 +60,16 @@ export default function Testimonials() {
           ref={trackRef}
           onTransitionEnd={() => setIsTransitioning(false)}
         >
-          <div className="testimonial">
-            <p>{testimonials[testimonials.length - 1].review}</p>
-            <h3>{testimonials[testimonials.length - 1].name}</h3>
-            <p>{testimonials[testimonials.length - 1].company}</p>
-          </div>
-          {testimonials.map((testimonial) => (
+          {testimonials.map((testimonial, index) => (
             <div
               key={testimonial.id}
-              className={`testimonial ${currentIndex === testimonial.id ? "active" : ""
-                }`}
+              className={`testimonial ${currentIndex === index ? "active" : ""}`}
             >
               <p>{testimonial.review}</p>
               <h3>{testimonial.name}</h3>
               <p>{testimonial.company}</p>
             </div>
           ))}
-          <div className="testimonial">
-            <p>{testimonials[0].review}</p>
-            <h3>{testimonials[0].name}</h3>
-            <p>{testimonials[0].company}</p>
-          </div>
         </div>
         <button className="slider-control prev" onClick={goToPrevious}>
           &lt;
