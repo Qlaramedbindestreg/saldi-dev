@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import "./CRM.scss";
 import office from "../../assets/office.jpg"; 
-import { FaUsersCog, FaClipboardList, FaClock } from "react-icons/fa";
+import { FaUsersCog, FaClipboardList, FaClock, FaCalendarAlt, FaUsers, FaHeadset } from "react-icons/fa";
+import crm from '../../assets/crm-baggrund.jpg';
 
 
 
@@ -55,41 +56,50 @@ export default function CRMSystem() {
 
   return (
     <div className="crm-container">
-      <div className="crm-header">
-        <h1>CRM-system i Saldi</h1>
-        <p>
-          Hold styr på aftaler & kunder med et nemt og overskueligt CRM-system.
-          Kalender, kundehistorik og opdeling af support & salg – alt samlet ét sted.
-        </p>
-        <a href="#form-section">
-          <button>Book en demo og kom godt i gang</button>
-        </a>
-      </div>
+<div className="crm-header">
+  <div className="crm-overlay">
+    <div className="crm-content">
+      <h1>CRM-system i Saldi</h1>
+      <p>
+        Hold styr på aftaler & kunder med et nemt og overskueligt CRM-system.
+        Kalender, kundehistorik og opdeling af support & salg – alt samlet ét sted.
+      </p>
+    </div>
 
-      <section className="module">
+    <section className="crm-modules-grid">
+      <div className="crm-module-card">
+        <FaCalendarAlt className="crm-module-icon" />
+        <h3>Kalender</h3>
+        <p>Få overblik over alle dine aftaler og kundemøder.</p>
+      </div>
+      <div className="crm-module-card">
+        <FaUsers className="crm-module-icon" />
+        <h3>Debitor/Kundeoversigt</h3>
+        <p>Tryk på en kunde, vælg datoer og skriv noter direkte.</p>
+      </div>
+      <div className="crm-module-card">
+        <FaHeadset className="crm-module-icon" />
+        <h3>Opdeling af Support & Salg</h3>
+        <p>Undgå sammenblanding af opgaver ved tydelig opdeling.</p>
+      </div>
+    </section>
+  </div>
+</div>
+
+
+      <section className="crm-kunde-module">
         <h2>Effektiv styring af kunderelationer</h2>
         <p>
           Med Saldi kan din virksomhed samle alle interne processer ét sted. 
           Vores CRM-system sikrer overblik over aftaler, kundedata og 
           medarbejderansvar.
         </p>
+        <a href="#form-section">
+      <button>Book en demo og kom godt i gang</button>
+    </a>
       </section>
 
-      <h2 className="modules-heading">Funktioner i CRM-modulet</h2>
-      <section className="modules-grid">
-        <div className="module-card">
-          <h3>📅 Kalender</h3>
-          <p>Få overblik over alle dine aftaler og kundemøder.</p>
-        </div>
-        <div className="module-card">
-          <h3>📌 Debitor/Kundeoversigt</h3>
-          <p>Tryk på en kunde, vælg datoer og skriv noter direkte.</p>
-        </div>
-        <div className="module-card">
-          <h3>🔀 Opdeling af Support & Salg</h3>
-          <p>Undgå sammenblanding af opgaver ved tydelig opdeling.</p>
-        </div>
-      </section>
+    
 
       <section className="additional-info">
       <h1 className="info-title">Vælg det rigtige CRM system</h1>
