@@ -1,0 +1,264 @@
+@import '../../variables.scss';
+
+.pos-guide {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 100px;
+}
+
+.pos-header {
+    
+  text-align: center;
+  margin-bottom: 40px;
+  h1 {
+    font-size: 2.5rem;
+    color: $primary-blue;
+  }
+}
+
+.intro-section, .considerations-section, .cta-section  {
+  margin-bottom: 40px;
+  h2 {
+    font-size: 2rem;
+    color: $primary-blue;
+    margin-bottom: 20px;
+  }
+  p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+}
+.business-needs-section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    h2 {
+        color: $primary-blue;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .two-column-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+      @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+      }
+      .column {
+        background: white;
+        padding: 20px;
+    
+ 
+      }
+    }
+  }
+
+.pos-grid-container {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; 
+
+  .pos-grid-item {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 30px;
+
+    &:hover {
+        background-color: $green-color;
+        color: white; 
+    
+    
+        .icon {
+          color: white;
+        }
+    
+  
+        h3 {
+          color: white;
+        }
+    
+      
+        p {
+          color: white;
+        }
+    }
+    .icon {
+      font-size: 2rem;
+      color: $secondary-blue;
+      margin-bottom: 15px;
+    
+    h3 {
+      font-size: 1.5rem;
+      color: $primary-blue;
+      margin-bottom: 10px;
+   
+    }
+    p {
+      font-size: 1rem;
+      line-height: 1.5;
+  
+    }
+  }
+}
+}
+
+.pos-img-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
+    .pos-img-content {
+      display: flex;
+      align-items: center;
+      max-width: 900px;
+      gap: 40px;
+      margin: 0;
+
+      .cta-image {
+     border-radius: 8px;
+            object-fit: cover;
+            margin: 0; 
+            padding: 0; 
+            width: 500px; 
+            height: 100%; 
+      }
+  
+      .cta-text {
+        max-width: 500px;
+  
+        h2 {
+          font-size: 2rem;
+          color: #003366;
+          margin-bottom: 15px;
+        }
+  
+        p {
+          font-size: 1.1rem;
+          color: #555;
+          margin-bottom: 20px;
+        }
+  
+        .cta-button {
+          background-color: #0073e6;
+          color: white;
+          padding: 15px 30px;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          font-size: 1.2rem;
+          transition: background-color 0.3s ease;
+  
+          &:hover {
+            background-color: darken(#0073e6, 10%);
+          }
+        }
+      }
+    }
+  }
+  
+
+  .popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .popup-content {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  
+    h3 {
+      margin-bottom: 20px;
+      color: #003366;
+    }
+  
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      padding: 20px;
+  
+      input,
+      textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1rem;
+  
+        &:focus {
+          border-color: #0073e6;
+          outline: none;
+        }
+      }
+  
+      textarea {
+        resize: vertical;
+        min-height: 80px;
+      }
+      input::placeholder,
+      textarea::placeholder {
+      font-family: 'Archivo', sans-serif;  
+}
+  
+      button {
+        background-color: $primary-blue;
+        color: white;
+        padding: 12px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1rem;
+        transition: background-color 0.3s ease;
+  
+        &:hover {
+          background-color: $green-color;
+        }
+      }
+  
+      .close-button {
+        background-color: #ccc;
+        color: black;
+        padding: 10px;
+        margin-top: 10px;
+  
+        &:hover {
+          background-color: darken(#ccc, 10%);
+        }
+      }
+    }
+  }
+  
+
+  @media (max-width: 768px) {
+    .cta-content {
+      flex-direction: column;
+      text-align: center;
+      gap: 20px;
+    }
+  
+    .cta-image {
+      width: 80%;
+      max-width: 250px;
+    }
+  }
+  

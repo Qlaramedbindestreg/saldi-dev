@@ -1,0 +1,38 @@
+@import '../../variables.scss';
+
+.h1 {
+   font-size: 20px;
+   text-align: center;
+   margin: 70px 20px 0 20px;
+   padding: 15px;
+   
+}
+.lovkrav-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 35px;
+    background: linear-gradient(to bottom, rgba(88, 178, 237, 0), rgba(88, 178, 237, 1)); 
+   
+    .big-check {
+        color: $primary-blue;
+    }
+
+     .check-wrapper {
+        margin: 20px;
+        
+
+        .check {
+            display: flex;
+            align-items: center;
+
+            .little-check {
+                color: $primary-blue;
+            }
+
+            p {
+                margin-left: 10px;
+            }
+        }
+     }
+
+}

@@ -1,0 +1,58 @@
+@import '../../variables.scss';
+
+.h1 {
+    text-align: center;
+    font-weight: 10;
+}
+.logo-slider-container {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    width: 100%;
+    padding: 30px;
+    
+  }
+  
+  .logo-slider {
+    display: inline-block;
+    animation: slide 20s linear infinite;
+    white-space: nowrap;
+   
+  
+    img {
+      height: 50px; 
+      margin: 0 20px; 
+    }
+  }
+  
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%); 
+    }
+  }
+
+  .grey-line {
+     width: 400px;
+     height: 3px;
+     background-color: $light-grey;
+     margin: 20px auto;
+  
+  }
+
+  .trustpilot-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+
+    img {
+        width: 100px;
+        height: auto;
+    }
+    p {
+        margin-left: 10px;
+    }
+  }

@@ -1,0 +1,302 @@
+@import '../../variables.scss';
+
+.sagsstyring-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+  }
+  
+  .sagsstyring-header {
+    position: relative;
+    height: auto;
+    height: 100vh;
+    background: url("../../assets/sagsstyring-baggrund.jpg") center/cover no-repeat; 
+  
+    .sagsstyring-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: $secondary-blue;
+      opacity: 0.7; 
+    }
+  
+    .content-box {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(255, 255, 255, 0.9); 
+      padding: 2rem;
+      border-radius: 10px;
+      max-width: 600px;
+      text-align: center;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+ 
+  
+      h1 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        
+      }
+  
+      p {
+        font-size: 1rem;
+        line-height: 1.5;
+        margin-bottom: 1.5rem;
+      }
+  
+      button {
+        background: $primary-blue;
+        color: white;
+        border: none;
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background 0.3s ease;
+  
+        &:hover {
+          background: $green-color;
+        }
+      }
+    }
+  }
+
+  .sagsstyring-module {
+    text-align: center;
+    margin: 50px 100px;
+    font-size: 1.5rem;
+
+    p {
+      margin: 0 100px;
+    }
+  }
+  
+  .sagsstyring-module-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: auto;
+    margin-top: 100px;
+    
+    .sagsstyring-module-content {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      width: 100%;
+      
+      .sagsstyring-module-image {
+        flex: 0 0 250px; 
+        max-width: 500px;
+        height: auto;
+        object-fit: contain;
+        border-radius: 8px;
+      }
+      
+      .module-text {
+        flex: 1; 
+        text-align: center;
+        h3 {
+          font-size: 1.8rem;
+          color: $primary-blue;
+          margin-bottom: 15px;
+        }
+  
+        ul {
+          list-style: none;
+          padding: 0;
+         
+  
+          li {
+            display: flex;
+            align-items: center;
+            font-size: 1rem;
+            color: #333;
+            margin-bottom: 8px;
+          
+  
+            .check-icon {
+              color: $primary-blue; 
+              margin-right: 10px;
+              font-size: 1.2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  .sag-modules-heading {
+    text-align: center;
+  }
+
+  .sag-modules-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 800px;
+    margin: auto;
+    padding: 40px 20px;
+  
+    .sag-module-card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s ease-in-out;
+  
+      &:hover {
+        transform: translateY(-5px);
+      }
+  
+      .module-icon {
+        font-size: 2.5rem;
+        color: $primary-blue;
+        margin-bottom: 10px;
+      }
+  
+      h3 {
+        font-size: 1.5rem;
+        color: #333;
+        margin-bottom: 10px;
+      }
+  
+      p {
+        font-size: 1rem;
+        color: #666;
+      }
+    }
+  }
+  
+  
+  .report-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    background: #f8f9fa;
+    text-align: center;
+  
+    .report-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      max-width: 1000px;
+      width: 100%;
+  
+      .report-block {
+        display: flex;
+        flex-direction: column;
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: transform 0.3s ease-in-out;
+  
+        &:hover {
+          transform: translateY(-5px);
+        }
+  
+        .report-icon {
+          font-size: 2.5rem;
+          color: $primary-blue;
+          margin-bottom: 10px;
+        }
+  
+        h2 {
+          font-size: 1.5rem;
+          color: #333;
+          margin-bottom: 10px;
+        }
+  
+        p {
+          font-size: 1rem;
+          color: #666;
+        }
+      }
+    }
+  }
+  .text-content {
+    max-width: 50%;
+  }
+  .h1 {
+    text-align: center;
+    font-weight: 10;
+}
+
+.stillads-logoer {
+    background-color: #e5e5e5;
+    margin: 0;
+    padding: 30px;
+
+.logo-slider-container {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    width: 100%;
+    padding: 30px;
+    
+  }
+  
+  .logo-slider {
+    display: inline-block;
+    animation: slide 20s linear infinite;
+    white-space: nowrap;
+   
+  
+    img {
+      height: 50px; 
+      margin: 0 20px; 
+    }
+  }
+  
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%); 
+    }
+  }
+
+  .grey-line {
+     width: 400px;
+     height: 3px;
+     background-color: $light-grey;
+     margin: 20px auto;
+  
+  }
+
+  .trustpilot-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+
+    img {
+        width: 100px;
+        height: auto;
+    }
+    p {
+        margin-left: 10px;
+    }
+  }
+  
+ }
+
+ .form-h1 {
+      color: $primary-blue;
+      text-align: center;
+ 
+ }

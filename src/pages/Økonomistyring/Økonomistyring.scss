@@ -1,0 +1,253 @@
+@import '../../variables.scss';
+
+.accounting-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.økonomi-header {
+  position: relative;
+  height: auto;
+  height: 100vh;
+  background: url('../../assets/økonomi-styring-baggrund.jpg') no-repeat center center/cover;
+  color: black;
+
+  .økonomi-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $secondary-blue;
+    opacity: 0.7; 
+  }
+
+  .økonomi-content-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.9); 
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.5;
+      margin-bottom: 1.5rem;
+    }
+
+    button {
+      background: $primary-blue;
+      color: white;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+
+      &:hover {
+        background: $green-color;
+      }
+    }
+  }
+}
+.økonomistyring-module {
+  text-align: center;
+  margin: 50px 100px;
+  font-size: 1.5rem;
+
+  p {
+    margin: 0 100px;
+  }
+}
+
+.økonomi-modules-heading {
+  font-size: 2rem;
+  margin: 40px 0 30px;
+  text-align: center;
+}
+
+.økonomi-modules-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 40px;
+
+
+  .økonomi-module-card {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+
+
+    h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    p,
+    ul {
+      font-size: 1rem;
+         color: black;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+.deb-cred-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+  gap: 30px;
+
+
+  .deb-cred-content {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    width: 100%;
+     padding: 30px;
+   border-radius: 10px;
+  
+}
+}
+
+.report-section {
+  text-align: center;
+  margin: 40px 0;
+
+  .report-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
+    
+
+    img {
+      max-width: 300px;
+      border-radius: 10px;
+    }
+
+    .text-content {
+      max-width: 600px;
+      text-align: left;
+
+      h1 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  .left-text {
+    flex-direction: row;
+  }
+
+  .left-image {
+    flex-direction: row-reverse;
+  }
+}
+.form-div {
+  height: 50px;
+  
+}
+
+.form-section {
+  background-size: cover;
+  background-position: center;
+  padding: 40px 20px;
+  text-align: center;
+
+  .form-background {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+
+    .form-h1 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .booking-form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      label {
+        display: flex;
+        flex-direction: column;
+        font-size: 1rem;
+        color: $dark-color;
+      }
+
+      input,
+      textarea {
+        padding: 10px;
+        border: 1px solid $light-grey;
+        border-radius: 5px;
+        font-size: 1rem;
+      }
+
+      textarea {
+        min-height: 100px;
+        resize: vertical;
+      }
+
+      input::placeholder,
+      textarea::placeholder {
+        font-family: 'Archivo', sans-serif;
+      }
+
+      button {
+        align-self: center;
+        width: fit-content;
+        padding: 10px 20px;
+        background-color: $primary-blue;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: $green-color;
+        }
+      }
+    }
+  }
+}

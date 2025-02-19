@@ -1,0 +1,350 @@
+@import '../../variables.scss';
+
+.revisor-container {
+
+    h1, h2 {
+        color:$primary-blue;
+    }
+
+    p {
+        margin-bottom: 15px;
+        line-height: 1.6;
+    }
+}
+
+.revisor-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("../../assets/revisorløsninger.jpg") center/cover no-repeat; 
+  
+    .revisor-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 50, 0.5); 
+    }
+  
+    .revisor-header {
+      position: relative; 
+      background: rgba(255, 255, 255, 0.9);
+      padding: 2rem;
+      border-radius: 10px;
+      text-align: center;
+      max-width: 600px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  
+      h1 {
+        font-size: 2rem;
+        color: $primary-blue;
+        margin-bottom: 1rem;
+      }
+  
+      p {
+        font-size: 1.2rem;
+        color: #333;
+        
+       
+      }
+    }
+  }
+  
+  .revisor-section {
+    margin-bottom: 30px;
+    text-align: center;
+    margin: 60px;
+    margin-top: 50px;
+    
+  
+    .revisor-benefits {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+  
+      .benefit {
+        flex: 1;
+        min-width: 300px;
+        background: #f8f8f8;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        position: relative;
+  
+        .benefit-icon {
+          font-size: 2.5rem; 
+          color: $primary-blue; 
+          margin-bottom: 10px;
+        }
+  
+        h3 {
+          font-size: 1.5rem;
+          color: #333;
+          margin-bottom: 10px;
+        }
+  
+        p {
+          font-size: 1rem;
+          color: #666;
+        }
+      }
+    }
+  }
+  
+.revisor-details {
+    text-align: center;
+    margin-top: 50px;
+
+
+    .detail-icon {
+        color: $primary-blue;
+        font-size: 30px;
+    }
+
+    h2 {
+      font-size: 30px;
+    }
+}
+.revisor-features {
+    display: flex;
+    flex-direction: row;
+    align-items: center;  
+    background: #eef4ff;
+    padding: 30px 50px; 
+    border-radius: 8px;
+  margin-top: 80px;
+  
+  
+    .revisor-features-text {
+      display: flex;
+      flex-direction: column;
+      max-width: 600px; 
+      width: 100%; 
+      margin-bottom: 50px;
+    
+    }
+    
+    img {
+      width: 40%;  
+      max-width: 350px; 
+      object-fit: cover;  
+      border-radius: 8px;  
+      margin-left: 100px;
+      margin-right: 50px;
+    }
+    
+    h2 {
+      font-size: 1.8rem;
+      color: #003366; 
+      margin-bottom: 1rem;
+    }
+    
+    p {
+      font-size: 1.1rem;
+      color: #333;
+      line-height: 1.6;  
+      margin-bottom: 1rem;
+      max-width: 600px;  
+    }
+  }
+  
+
+  
+
+  .revisor-advantages {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 50px;
+  
+    .advantage {
+      flex: 1;
+      min-width: 300px;
+      background: #f8f8f8;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+  
+      .advantage-icon {
+        font-size: 2.5rem;
+        color: #003366;
+        margin-bottom: 10px;
+      }
+  
+      h3 {
+        font-size: 1.4rem;
+        color: #003366;
+        margin-bottom: 0.8rem;
+      }
+  
+      p {
+        font-size: 1.1rem;
+        color: #333;
+        line-height: 1.6;
+      }
+    }
+  }
+  
+
+  
+.kompromis-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8f8f8;
+    padding: 60px;
+    border-radius: 8px;
+    gap: 40px;
+
+  
+    .kompromis {
+      flex: 1;
+      max-width: 500px;
+  
+      h3 {
+        font-size: 1.8rem;
+        color: $primary-blue;
+        margin-bottom: 1rem;
+      }
+  
+      ul {
+        list-style: none;
+        padding: 0;
+  
+        li {
+          display: flex;
+          align-items: center;
+          font-size: 1.1rem;
+          color: #333;
+          margin-bottom: 0.8rem;
+  
+          .check-icon {
+            color: $primary-blue;
+            font-size: 1.2rem;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  
+    .advantage-image {
+      width: 40%;
+      max-width: 350px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+  }
+  
+
+  
+
+  .revisor-dashboard {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    margin: 50px;
+  
+    .feature {
+      flex: 1;
+      min-width: 300px;
+      background: #e3f2fd;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  
+      .feature-icon {
+        font-size: 2.5rem;
+        color: $primary-blue;
+        margin-bottom: 10px;
+      }
+  
+      h2 {
+        font-size: 1.4rem;
+        color: $primary-blue;
+        margin-bottom: 0.8rem;
+      }
+  
+      p {
+        font-size: 1.1rem;
+        color: #333;
+        line-height: 1.6;
+      }
+    }
+  }
+  
+
+  
+  .kontakt {
+   
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    margin-bottom: 50px;
+    .kontakt-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: $secondary-blue;
+      padding: 30px 40px;
+      border-radius: 8px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      max-width: 800px;
+      width: 100%;
+  
+      .kontakt-text {
+        max-width: 60%;
+        
+        h1 {
+          color: $lighter-grey;
+          font-size: 1.8rem;
+          margin-bottom: 10px;
+        }
+  
+        p {
+          color: $lighter-grey;
+          font-size: 1.1rem;
+          line-height: 1.5;
+        }
+      }
+  
+      .kontakt-button {
+        border: none;
+        background-color: $primary-blue;
+        color: $light-grey;
+        padding: 12px 20px;
+        font-size: 1rem;
+        font-weight: bold;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: 0.3s ease;
+  
+        &:hover {
+          background-color: $green-color;
+        }
+      }
+    }
+  }
+  
+
+
+
+@media (max-width: 768px) {
+    .revisor-container {
+        padding: 20px;
+    }
+
+    .revisor-benefits,
+    .revisor-advantages {
+        flex-direction: column;
+    }
+}

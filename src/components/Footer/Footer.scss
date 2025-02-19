@@ -1,0 +1,102 @@
+@import '../../variables.scss';
+
+footer {
+   
+    width: 100%;
+
+    
+
+    .footer-section-one {
+        
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 20px;
+        background-color: $primary-blue;
+        color: $lighter-grey;
+
+        .contact-section {
+            flex: 1;
+            padding: 20px;
+            h1 {
+                margin-bottom: 10px;
+                font-size: 20px;
+            }
+            h2 {
+                line-height: 1.5;
+                font-size: 15px;
+                font-weight: lighter;
+
+                a {
+                    color: $lighter-grey;
+                    text-decoration: none;
+                    cursor: pointer;
+                    &:hover {
+                        color: $green-color;
+                    }
+                }
+            }
+        }
+
+        .footer-nav {
+            
+            padding: 20px 40px;
+            margin-right: auto;
+            h3 {
+                margin-bottom: 10px;
+            }
+            nav {
+                ul {
+                    list-style: none;
+                    padding: 0;
+                    li {
+                        margin-bottom: 5px;
+                        font-size: 15px;
+                        font-weight: lighter;
+                        a {
+                            text-decoration: none;
+                            color: $lighter-grey;
+                            &:hover {
+                                color: $green-color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-section-two {
+        display: flex;
+       
+        align-items: center;
+        padding: 20px 40px;
+        border-top: 1px solid $dark-color;
+
+        img {
+            height: 40px;
+            margin-right: 20px;
+            
+        }
+
+        .social-media-section {
+            display: flex;
+            flex: 1;
+            margin-top: 5px;
+            gap: 20px;
+            margin-right: 15px;
+          
+            a {
+              text-decoration: none;
+              color: $primary-blue; 
+              transition: transform 0.3s ease, color 0.3s ease;
+          
+              &:hover {
+                color: $green-color;
+                text-decoration: none; 
+                transform: scale(1.2);
+              }
+            }
+          }
+          
+}
+}

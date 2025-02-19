@@ -1,0 +1,33 @@
+@import '../../variables.scss';
+
+.counter-container {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    gap: 50px; 
+    flex-wrap: wrap; 
+    margin-top: 100px;
+    margin-bottom: 100px;
+  .counter {
+    text-align: center;  
+  }
+  
+  h1 {
+    font-size: 40px; 
+    font-weight: 10;
+    color: $primary-blue;  
+    margin: 0;
+    transition: all 0.5s ease-in-out; 
+  }
+  
+  p {
+    font-size: 15px;
+    color: #333; 
+    margin: 5px 0 0;
+    font-weight: 400;
+  }
+
+  }
+  
+
+  
