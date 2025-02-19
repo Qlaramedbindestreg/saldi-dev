@@ -21,29 +21,53 @@ const testimonials = [
 ];
 
 export default function Testimonials() {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(1); 
   const [isTransitioning, setIsTransitioning] = useState(false);
   const trackRef = useRef(null);
 
+
+  const clonedTestimonials = [
+    testimonials[testimonials.length - 1],
+    ...testimonials,
+    testimonials[0], 
+  ];
+
   useEffect(() => {
-    if (currentIndex < 0) {
-      setCurrentIndex(testimonials.length - 1);  
-    } else if (currentIndex >= testimonials.length) {
-      setCurrentIndex(0);  
-    }
-  }, [currentIndex]);
+    const handleTransitionEnd = () => {
+      if (currentIndex === 0) {
+
+        trackRef.current.style.transition = "none";
+        setCurrentIndex(testimonials.length);
+      } else if (currentIndex === clonedTestimonials.length - 1) {
+    
+        trackRef.current.style.transition = "none";
+        setCurrentIndex(1);
+      }
+      setIsTransitioning(false);
+    };
+
+    trackRef.current.addEventListener("transitionend", handleTransitionEnd);
+
+    return () => {
+      if (trackRef.current) {
+        trackRef.current.removeEventListener("transitionend", handleTransitionEnd);
+      }
+    };
+  }, [currentIndex, clonedTestimonials.length, testimonials.length]);
 
   const goToNext = () => {
     if (!isTransitioning) {
       setIsTransitioning(true);
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length); 
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % clonedTestimonials.length);
     }
   };
 
   const goToPrevious = () => {
     if (!isTransitioning) {
       setIsTransitioning(true);
-      setCurrentIndex((prevIndex) => (prevIndex - 1 + testimonials.length) % testimonials.length); 
+      setCurrentIndex(
+        (prevIndex) => (prevIndex - 1 + clonedTestimonials.length) % clonedTestimonials.length
+      );
     }
   };
 
@@ -56,13 +80,13 @@ export default function Testimonials() {
           className={`testimonial-track ${isTransitioning ? "transitioning" : ""}`}
           style={{
             transform: `translateX(calc(-${currentIndex * 100}% - ${currentIndex * 20}px))`,
+            transition: isTransitioning ? "transform 0.5s ease" : "none",
           }}
           ref={trackRef}
-          onTransitionEnd={() => setIsTransitioning(false)}
         >
-          {testimonials.map((testimonial, index) => (
+          {clonedTestimonials.map((testimonial, index) => (
             <div
-              key={testimonial.id}
+              key={index}
               className={`testimonial ${currentIndex === index ? "active" : ""}`}
             >
               <p>{testimonial.review}</p>
