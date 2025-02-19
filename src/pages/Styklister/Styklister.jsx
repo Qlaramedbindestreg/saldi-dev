@@ -1,8 +1,9 @@
-import { FaBox, FaChartLine, FaCogs, FaSearch, FaWarehouse } from 'react-icons/fa';
+import { FaBox, FaChartLine, FaCogs, FaSearch, FaWarehouse, FaTh, FaSitemap, FaChartBar } from 'react-icons/fa';
 import { FiPackage } from "react-icons/fi";
 import { useState } from "react";
 import styklister from '../../assets/styklister-baggrund.jpg';
 import './Styklister.scss';
+
 
 
 export default function Styklister() {
@@ -111,17 +112,17 @@ export default function Styklister() {
             <p>Gør det nemt at finde varer ved hjælp af en effektiv søgefunktion.</p>
           </div>
           <div className="grid-item">
-            <FaSearch className="icon" />
+            <FaTh className="icon" />
             <h3>Ubegrænset antal varegrupper</h3>
             <p>Tillader oprettelse af et ubegrænset antal varegrupper for bedre varekategorisering.</p>
           </div>
           <div className="grid-item">
-            <FaSearch className="icon" />
+            <FaSitemap className="icon" />
             <h3>Varespor</h3>
             <p> Sikrer fuld sporbarhed af varer fra indkøb til salg.</p>
           </div>
           <div className="grid-item">
-            <FaSearch className="icon" />
+            <FaChartBar className="icon" />
             <h3>Varestatistik</h3>
             <p> Leverer analyser og statistik for hver vare, som hjælper med at forstå salgstendenser og lagerbehov.</p>
           </div>
@@ -152,7 +153,7 @@ export default function Styklister() {
           </div>
         </div>
       </section>
-      <p>Ved at vælge et lagerstyringssystem, der matcher dine behov, sikrer du, at din virksomhed kan operere mere effektivt, reducere omkostninger og forbedre kundetilfredsheden. Vælg med omtanke, og husk at en velovervejet investering i det rette lagersystem kan betale sig mange gange i det lange løb.</p>
+      <p className='valg'>Ved at vælge et lagerstyringssystem, der matcher dine behov, sikrer du, at din virksomhed kan operere mere effektivt, reducere omkostninger og forbedre kundetilfredsheden. Vælg med omtanke, og husk at en velovervejet investering i det rette lagersystem kan betale sig mange gange i det lange løb.</p>
 
       <section className="cta-section">
             <h2>Få et komplet lagerstyringssystem</h2>
