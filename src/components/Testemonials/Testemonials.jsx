@@ -27,23 +27,23 @@ export default function Testimonials() {
 
   useEffect(() => {
     if (currentIndex < 0) {
-      setCurrentIndex(testimonials.length - 1);  // Go to last testimonial when going back past the first one
+      setCurrentIndex(testimonials.length - 1);  
     } else if (currentIndex >= testimonials.length) {
-      setCurrentIndex(0);  // Go to first testimonial when going past the last one
+      setCurrentIndex(0);  
     }
   }, [currentIndex]);
 
   const goToNext = () => {
     if (!isTransitioning) {
       setIsTransitioning(true);
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length); // Move to next testimonial, loop back to 0 when reaching the end
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length); 
     }
   };
 
   const goToPrevious = () => {
     if (!isTransitioning) {
       setIsTransitioning(true);
-      setCurrentIndex((prevIndex) => (prevIndex - 1 + testimonials.length) % testimonials.length); // Move to previous testimonial, loop back to last when reaching the beginning
+      setCurrentIndex((prevIndex) => (prevIndex - 1 + testimonials.length) % testimonials.length); 
     }
   };
 
