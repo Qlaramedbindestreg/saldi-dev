@@ -1,48 +1,68 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import "./Counter.scss";
 
 export default function Counter() {
   const [count1, setCount1] = useState(0);
   const [count2, setCount2] = useState(0);
-  const [count3, setCount3] = useState(0);
+  const [count3, useCount3] = useState(90);
+  const [isVisible, setIsVisible] = useState(false);
+  const counterRef = useRef(null);
 
   useEffect(() => {
-
-    let interval1 = setInterval(() => {
-      if (count1 < 20) {
-        setCount1(count1 + 1000000);
-      } else {
-        clearInterval(interval1);
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.disconnect(); 
+        }
+      },
+      {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.1, 
       }
-    }, 100);
+    );
 
-
-    let interval2 = setInterval(() => {
-      if (count2 < 25) {
-        setCount2(count2 + 1);
-      } else {
-        clearInterval(interval2);
-      }
-    }, 100);
-
-
-    let interval3 = setInterval(() => {
-      if (count3 < 99) {
-        setCount3(count3 + 1);
-      } else {
-        clearInterval(interval3);
-      }
-    }, 30);
+    if (counterRef.current) {
+      observer.observe(counterRef.current);
+    }
 
     return () => {
-      clearInterval(interval1);
-      clearInterval(interval2);
-      clearInterval(interval3);
+      if (observer) {
+        observer.disconnect();
+      }
     };
-  }, [count1, count2, count3]);
+  }, []);
+
+  useEffect(() => {
+    if (isVisible) {
+      const duration = 2000; 
+      const startTime = Date.now();
+
+      const animateCounters = () => {
+        const elapsedTime = Date.now() - startTime;
+        const progress = Math.min(elapsedTime / duration, 1); 
+
+  
+        setCount1(Math.floor(20 * progress));
+
+    
+        setCount2(Math.floor(25 * progress));
+
+
+        useCount3((90 + (9.9 * progress)).toFixed(1));
+
+        if (progress < 1) {
+          requestAnimationFrame(animateCounters);
+        }
+      };
+
+      requestAnimationFrame(animateCounters);
+    }
+  }, [isVisible]);
 
   return (
-    <div className="counter-container">
+    <div className="counter-container" ref={counterRef}>
       <div className="counter">
         <h1>{`+${count1}M`}</h1>
         <p>Fakturerede ordrer i Saldi</p>

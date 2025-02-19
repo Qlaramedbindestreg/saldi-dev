@@ -8,9 +8,9 @@ import trustpilot from '../../assets/trustpilot.png';
 import './logoSlider.scss';
 
 export default function LogoSlider() {
-    return (
-        <>
-        <h1 className='h1'>Mere end 300 virksomheder, benytter allerede systemet</h1>
+  return (
+    <>
+      <h1 className='h1'>Mere end 300 virksomheder, benytter allerede systemet</h1>
       <div className="logo-slider-container">
         <div className="logo-slider">
           <img src={medShop} alt="logo" />
@@ -19,8 +19,6 @@ export default function LogoSlider() {
           <img src={dentec} alt="logo" />
           <img src={ibon} alt="logo" />
           <img src={mebel} alt="logo" />
-        </div>
-        <div className="logo-slider" aria-hidden="true">
           <img src={medShop} alt="logo" />
           <img src={stillads} alt="logo" />
           <img src={have} alt="logo" />
@@ -29,15 +27,13 @@ export default function LogoSlider() {
           <img src={mebel} alt="logo" />
         </div>
       </div>
-       
-      <div className='grey-line'>
 
-      </div>
+      <div className='grey-line'></div>
 
-       <div className='trustpilot-wrapper'>
+      <div className='trustpilot-wrapper'>
         <img src={trustpilot} alt="trustpilot" />
         <p>4.7+ stjerner på Trustpilot</p>
-       </div>
-      </>
-    );
-  };
+      </div>
+    </>
+  );
+}
