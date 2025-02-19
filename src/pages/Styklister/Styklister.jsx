@@ -1,6 +1,9 @@
 import { FaBox, FaChartLine, FaCogs, FaSearch, FaWarehouse } from 'react-icons/fa';
+import { FiPackage } from "react-icons/fi";
 import { useState } from "react";
+import styklister from '../../assets/styklister-baggrund.jpg';
 import './Styklister.scss';
+
 
 export default function Styklister() {
     const [showForm, setShowForm] = useState(false);
@@ -31,9 +34,16 @@ export default function Styklister() {
 
     <>
     <div className="inventory-management">
-      <div className="styklister-header">
+   
+
+    <div className="styklister-header">
+      <div className="styklister-overlay"></div>
+      <div className="styklister-content">
         <h1>Effektiv lagerstyring med styklister</h1>
       </div>
+    </div>
+
+
 
       <section className="intro-section">
         <p>
@@ -43,6 +53,34 @@ export default function Styklister() {
           Som et integreret økonomistyringssystem hjælper Saldi med at forenkle driften ved at samle lagerstyring og regnskabsopgaver i et enkelt system. Det fjerner behovet for at jonglere mellem forskellige softwareløsninger eller tredjepartsudvidelser og mindsker risikoen for fejl ved at holde alle data samlet på ét sted. Med Saldi får virksomheden et klart overblik over både lager og økonomi i realtid, hvilket gør det lettere at træffe informerede beslutninger og optimere driftsprocesser.
         </p>
       </section>
+
+      <section className="lager-system">
+      <div className="lager-header">
+      <FiPackage className="lager-icon"/>
+        <h1>Et komplet lagersystem</h1>
+      </div>
+
+      <div className="lager-content">
+        <div className="lager-text left">
+          <p>
+            I Saldi fungerer lagerstyring og regnskab ikke som isolerede enheder,
+            de er i stedet fuldt integrerede i et enkelt system. Integrationen
+            betyder, at oplysninger indtastet i lagerdelen automatisk afspejles i
+            regnskabet og omvendt.
+          </p>
+        </div>
+
+        <div className="lager-text right">
+          <p>
+            For det første sparer det tid, da dobbeltarbejde med dataindtastning
+            undgås. For det andet reduceres fejlmarginen betragteligt, fordi
+            automatisering sikrer konsistens i dataene på tværs af lager og
+            regnskab. Endelig giver det et bedre økonomisk overblik.
+          </p>
+        </div>
+      </div>
+    </section>
+    
 
       <section className="features-section">
         <h2>Nøglefunktioner i lagerstyringssystemet</h2>
