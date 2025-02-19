@@ -113,8 +113,8 @@ export default function POSSystem() {
             {showPopup && (
                 <div className="popup-overlay">
                     <div className="popup-content">
-                        <h3>Kontakt</h3>
-                        <p>Udfyld formularen og tryk "send"</p>
+                        <h3 className="form-h1">Kontakt</h3>
+                        <p className="form-h1">Udfyld formularen og tryk "send"</p>
                         <form onSubmit={handleSubmit}>
                             <input type="text" name="name" placeholder="Fulde navn" value={formData.name} onChange={handleInputChange} required />
                             <input type="email" name="email" placeholder="Email" value={formData.email} onChange={handleInputChange} required />

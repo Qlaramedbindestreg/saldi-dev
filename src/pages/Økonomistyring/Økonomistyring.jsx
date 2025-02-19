@@ -111,6 +111,8 @@ const handleSubmit = (e) => {
       >
             <div className="form-overlay"></div>
             <div className="form-background">
+            <h1 className="form-h1">
+            Få mere info, book en demo</h1>
                 <form className='booking-form' onSubmit={handleSubmit}>
                     <label>
                         <input 
