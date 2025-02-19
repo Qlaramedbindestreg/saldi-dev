@@ -8,7 +8,7 @@ import app from '../../assets/app.jpg';
 import excel from '../../assets/excel.jpg'; 
 import mobilepay from '../../assets/mobilepay.jpg'; 
 
-import './blog.scss';
+import './Blog.scss';
 
 export default function Blog() {
   const { type } = useParams();  
