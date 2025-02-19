@@ -36,7 +36,7 @@ export default function Counter() {
 
   useEffect(() => {
     if (isVisible) {
-      const duration = 2000; 
+      const duration = 3000; 
       const startTime = Date.now();
 
       const animateCounters = () => {
