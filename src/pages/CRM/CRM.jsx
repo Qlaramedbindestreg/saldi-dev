@@ -121,21 +121,11 @@ export default function CRMSystem() {
       <section className="additional-info">
       <h1 className="info-title">Vælg det rigtige CRM system</h1>
       
-      <div className="info-grid">
-        <div className="info-left">
+  
           <p>
-            Med Saldi kan din virksomhed få samlet alle de interne processer ét sted, hvilket ofte fører til strømlinede processer for virksomheden og medarbejdere.
+          Alle virksomheders behov er forskellige. Saldi har i udviklet et CRM-system som er lige til at gå til. Vi bruger det selv til alle vores kunder, både salg & support sager. Derfor har vi udviklet det på en måde som både er nem at lære & nem at benytte.
           </p>
-          <button>Kom i gang</button>
-        </div>
-        <div className="info-right">
-          <p>
-            Derfor har vi udviklet et nyt og optimeret CRM-system, som sikrer kommunikationen mellem udvalgte medarbejdere og kunder.
-            Saldi's CRM-system skaber direkte kommunikation mellem Debitor(kunde)kortet og kalenderoversigten. 
-            Tryk på kunden og se hele historikken og tilføj nemt nye møder og aftaler, som vil vise sig i kalenderoversigten.
-          </p>
-        </div>
-      </div>
+      
     </section>
 
      <section className="crm-grid">
