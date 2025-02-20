@@ -280,16 +280,33 @@
   }
   
 
+
   @media (max-width: 768px) {
-    .cta-content {
-      flex-direction: column;
-      text-align: center;
-      gap: 20px;
-    }
+    .pos-guide {
+      .pos-header {
+        height: auto;
+        padding: 40px 20px; 
+      }
   
-    .cta-image {
-      width: 80%;
-      max-width: 250px;
+      .pos-img-section {
+        flex-direction: column; 
+        .pos-img-content {
+          flex-direction: column;
+          gap: 20px;
+          height: auto; 
+        }
+  
+        .cta-image {
+          width: 100%;  
+        }
+  
+        .cta-text {
+          text-align: center; 
+        }
+      }
+  
+      .popup-content {
+        width: 90%; 
+      }
     }
   }
-  

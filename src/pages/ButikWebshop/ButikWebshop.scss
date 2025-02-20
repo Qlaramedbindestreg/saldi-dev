@@ -385,3 +385,66 @@
     }
   }
 }
+
+@media (max-width: 600px) {
+  .webshop-header {
+    height: 50vh;
+  }
+
+  .webshop-content-box {
+    padding: 1.5rem;
+    max-width: 90%;
+  }
+
+  .web-modules-heading {
+    font-size: 1.5rem;
+  }
+
+  .web-modules-grid {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .butik-module-card {
+    flex-direction: column;
+    text-align: center;
+    margin: 20px;
+  }
+
+  .report-section {
+    flex-direction: column;
+  }
+
+  .payment-section {
+    padding: 10px;
+  }
+
+  .feature-grid {
+    padding: 20px;
+  }
+}
+
+
+@media (max-width: 900px) {
+  .webshop-header {
+    height: 60vh;
+  }
+
+  .webshop-content-box {
+    padding: 2rem;
+    max-width: 80%;
+  }
+
+  .web-modules-grid {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .butik-module-card {
+    margin: 30px;
+  }
+
+  .feature-grid {
+    padding: 30px;
+  }
+}

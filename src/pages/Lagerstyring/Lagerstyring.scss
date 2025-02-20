@@ -228,23 +228,86 @@
   }
 }
 
-@media (max-width: 768px) {
-  .modules-grid {
-    grid-template-columns: 1fr;
+@media (max-width: 480px) {
+  .lagerstyring-header {
+    height: auto; 
+    background-size: cover; 
   }
 
-  .report-section {
-    .report-block {
-      flex-direction: column;
-      text-align: center;
+  .lagerstyring-content-box {
+    width: 90%;
+    padding: 1rem; 
+    font-size: 0.9rem; 
+  }
 
-      img {
-        max-width: 80%;
-      }
+  .lagerstyring-modules-grid {
+    grid-template-columns: 1fr; 
+  }
 
-      .text-content {
-        max-width: 100%;
-      }
-    }
+  .lagerstyring-module-card {
+    padding: 10px; 
+  }
+
+  .report-block {
+    flex-direction: column; 
+    gap: 10px;
+  }
+
+  .text-content {
+    max-width: 100%;
+    font-size: 0.9rem; 
+  }
+
+  .form-section {
+    padding: 20px 10px; 
+  }
+
+  .form-background {
+    padding: 20px; 
+  }
+
+  .form-h1 {
+    font-size: 1.5rem; 
+  }
+
+  .booking-form label {
+    font-size: 0.9rem; 
+  }
+
+  .booking-form input, .booking-form textarea {
+    font-size: 0.9rem; 
+  }
+}
+
+
+@media (max-width: 768px) {
+  .lagerstyring-header {
+    height: 60vh; 
+  }
+
+  .lagerstyring-content-box {
+    width: 80%;
+    padding: 1.5rem;
+    font-size: 1rem; 
+  }
+
+  .lagerstyring-modules-grid {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+
+  .lagerstyring-module-card {
+    padding: 15px; 
+  }
+
+  .form-section {
+    padding: 30px 20px; 
+  }
+
+  .form-background {
+    padding: 30px;
+  }
+
+  .form-h1 {
+    font-size: 1.8rem; 
   }
 }

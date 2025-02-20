@@ -216,3 +216,84 @@ html {
     }
   }
 
+  @media (max-width: 600px) {
+    .main-background {
+      height: auto;
+      padding: 20px;
+    }
+  
+    .main-wrapper {
+      margin-left: 0;
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+    }
+  
+    .main-text-box {
+      padding: 20px;
+      margin-bottom: 50px;
+      max-width: 90%;
+    }
+  
+    .cloud-software-wrapper,
+    .open-source-wrapper {
+      flex-direction: column;
+      margin: 50px 20px;
+    }
+  
+    .cloud-software-wrapper .tekst-wrapper,
+    .open-source-wrapper .second-tekst-wrapper {
+      width: 100%;
+      margin: 10px 0;
+    }
+  
+    img {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      margin: 20px 0;
+    }
+  
+    .booking-form label {
+      font-size: 16px;
+    }
+  
+    .booking-form input,
+    .booking-form textarea {
+      font-size: 16px;
+    }
+  }
+  
+
+  @media (max-width: 900px) {
+    .main-background {
+      height: 80vh;
+    }
+  
+    .main-wrapper {
+      flex-direction: column;
+      margin-left: 0;
+    }
+  
+    .main-text-box {
+      padding: 30px;
+      max-width: 80%;
+    }
+  
+    .cloud-software-wrapper,
+    .open-source-wrapper {
+      flex-direction: column;
+      margin: 50px 20px;
+    }
+  
+    .cloud-software-wrapper .tekst-wrapper,
+    .open-source-wrapper .second-tekst-wrapper {
+      width: 100%;
+    }
+  
+    .booking-form input,
+    .booking-form textarea {
+      font-size: 16px;
+    }
+  }
+

@@ -251,3 +251,86 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .økonomi-header {
+    height: auto;
+    background-position: top center;  
+  }
+
+  .økonomi-content-box {
+    max-width: 90%; 
+    padding: 1rem;
+  }
+
+  .økonomi-modules-grid {
+    flex-direction: column; 
+    gap: 10px;
+  }
+
+  .økonomi-module-card {
+    width: 100%;  
+    padding: 15px;
+  }
+
+  .deb-cred-card {
+    flex-direction: column;  
+    align-items: stretch;  
+    gap: 20px;
+  }
+
+  .report-block {
+    flex-direction: column; 
+    text-align: center; 
+  }
+
+  .form-section {
+    padding: 20px 10px;
+  }
+
+  .form-background {
+    max-width: 90%;  
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .økonomi-header {
+    height: auto;
+    padding: 20px;
+    background-position: center; 
+  }
+
+  .økonomi-content-box {
+    padding: 1rem;
+  }
+
+  .økonomi-modules-grid {
+    gap: 10px;
+    padding: 0 10px;
+  }
+
+  .økonomi-module-card {
+    width: 100%; 
+    padding: 15px;
+  }
+
+  .deb-cred-card {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .report-block {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .form-section {
+    padding: 20px 10px;
+  }
+
+  .form-background {
+    max-width: 100%;
+    padding: 20px;
+  }
+}

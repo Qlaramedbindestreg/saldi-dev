@@ -204,15 +204,15 @@
         }
     }
 
-    // Add styles to ensure Vipps maintains its width and height
+  
     .mobile-payment-method {
-        text-align: center; // Center it horizontally
-        margin-bottom: 20px; // Space it out from the container
+        text-align: center;
+        margin-bottom: 20px; 
 
         img {
             width: 300px;
             height: 100px;
-            object-fit: contain; // Ensures the image scales properly
+            object-fit: contain; 
         }
     }
 
@@ -329,10 +329,89 @@
     }
 }
 
-
-@media (max-width: 1024px) {
-    .loesninger-grid {
-        flex-direction: column;
-        align-items: center;
+@media (max-width: 768px) {
+    .loesninger-container {
+      padding: 30px;  
     }
-}
+  
+    .loesninger-grid {
+      flex-direction: column; 
+    }
+  
+    .plan {
+      padding: 20px;  
+      height: auto; 
+      min-width: auto; 
+    }
+  
+    .pricing-info {
+      font-size: 12px;  
+    }
+  
+    .table-container {
+      padding: 0 10px; 
+      th, td {
+        font-size: 14px; 
+      }
+    }
+  
+    .features {
+      table {
+        th, td {
+          font-size: 14px;
+        }
+      }
+    }
+  
+    .payment-methods-container {
+      flex-direction: column; 
+      align-items: center;  
+    }
+  
+    .contact-form-container {
+      padding: 20px;
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+  
+    .contact-form {
+      .form-row {
+        flex-direction: column;  
+        gap: 15px;  
+      }
+  
+      button {
+        margin-left: 0;  
+        margin-right: 0;
+        width: 100%; 
+      }
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .loesninger-container {
+      padding: 15px;  
+    }
+  
+    .loesninger-grid {
+      gap: 10px;  
+    }
+  
+    .plan {
+      padding: 15px;  
+    }
+  
+    .payment-methods-container {
+      gap: 15px; 
+    }
+  
+    .contact-form-container {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+  
+    .contact-form button {
+      font-size: 14px;  
+    }
+  }
+  
