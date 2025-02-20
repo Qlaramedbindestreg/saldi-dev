@@ -45,7 +45,7 @@ export default function Moduler() {
             <p>Vores unikke butiksløsninger sikrer din virksomhed enestående driftssikerhed og forbedret kommunikation mellem afdelinger.
             </p>
             <Link to="/Løsninger/ButikWebshop">
-              <button>Butikskæder & webshops
+              <button>Læs mere om butikskæder & webshops
                 <IoIosArrowRoundForward size={20}/>
               </button>
             </Link>
