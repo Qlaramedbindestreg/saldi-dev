@@ -149,8 +149,7 @@ export default function Revisor() {
       {showPopup && (
         <div className="popup-overlay">
           <div className="popup-content">
-            <h3 className="form-h1">Kontakt</h3>
-            <p className="form-h1">Udfyld formularen og tryk "send"</p>
+
             <form onSubmit={handleSubmit}>
               <input
                 type="text"
