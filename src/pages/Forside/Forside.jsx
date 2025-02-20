@@ -7,7 +7,7 @@ import Booking from '../../components/Booking/Booking';
 import Counter from '../../components/Counter/Counter';
 
 import forsideBaggrund from '../../assets/forside-baggrund.jpg';
-import forsideVideo from '../../assets/forside-baggrund_compressed.mov';
+import forsideVideo from '../../assets/forside-baggrund_smaller.mov';
 import cloudSoftware from '../../assets/cloud-software.jpg';
 import openSource from '../../assets/computer.jpg';
 
