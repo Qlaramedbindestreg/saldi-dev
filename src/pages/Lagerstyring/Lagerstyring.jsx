@@ -76,9 +76,9 @@ const handleSubmit = (e) => {
         </section>
 
       <section className="lagerstyring-systemvalg">
-        <h2>Valg af Det Rette Lagerstyringssystem</h2>
+        <h2>Valg af det rette lagerstyringssystem</h2>
         <p>Det er vigtigt at vælge et system, der passer til din virksomheds størrelse og behov. Saldi er skalerbart, hvilket betyder, at det kan vokse med din virksomhed, og det kan integreres problemfrit med eksisterende regnskabssystemer, CRM-løsninger og e-handelsplatforme. På den måde opnår du et mere effektivt og økonomisk bæredygtigt system.</p>
-        <h2>Vælg Saldi til en Effektiv Lagerstyring</h2>
+        <h2>Vælg Saldi til en effektiv lagerstyring</h2>
         <p>Med Saldi får du et brugervenligt og effektivt system, der hjælper dig med at styre alle aspekter af lagerstyring og regnskab på én platform.</p>
       </section>
 
