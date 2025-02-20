@@ -300,3 +300,66 @@
       text-align: center;
  
  }
+ @media (max-width: 1024px) {
+  .sagsstyring-module {
+    margin: 40px 50px;
+  }
+
+  .sagsstyring-module-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .sagsstyring-module-content {
+    flex-direction: column;
+  }
+
+  .sag-modules-grid, .report-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .sagsstyring-module {
+    margin: 30px;
+    font-size: 1.3rem;
+  }
+
+  .sagsstyring-module p {
+    margin: 0 50px;
+  }
+
+  .sagsstyring-header {
+    height: 80vh;
+  }
+
+  .content-box {
+    width: 90%;
+    padding: 1.5rem;
+  }
+
+  .sagsstyring-module-card {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sagsstyring-header {
+    height: 70vh;
+  }
+
+  .content-box {
+    padding: 1rem;
+    h1 {
+      font-size: 1.5rem;
+    }
+  }
+
+  .sagsstyring-module p {
+    margin: 0;
+  }
+
+  .sagsstyring-module-card {
+    padding: 10px;
+  }
+}
