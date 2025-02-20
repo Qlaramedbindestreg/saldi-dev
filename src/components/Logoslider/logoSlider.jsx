@@ -1,3 +1,4 @@
+import { useEffect, useRef, useState } from 'react';
 import medShop from '../../assets/medshopdk-logo.jpg'; 
 import stillads from '../../assets/herlev-stilladser.png'; 
 import have from '../../assets/havemøbelland-logo.jpg'; 
@@ -8,23 +9,50 @@ import trustpilot from '../../assets/trustpilot.png';
 import './logoSlider.scss';
 
 export default function LogoSlider() {
+  const sliderRef = useRef(null);
+  const [loopCount, setLoopCount] = useState(0);
+
+  useEffect(() => {
+    const slider = sliderRef.current;
+    let count = 0;
+
+    const animateSlider = () => {
+      if (slider) {
+        count++;
+        setLoopCount(count);
+
+        if (count < 7) {
+          slider.style.transition = 'transform 20s linear'; 
+          slider.style.transform = `translateX(-50%)`;
+        } else {
+      
+          setTimeout(() => {
+            slider.style.transition = 'none';
+            slider.style.transform = 'translateX(0)';
+            count = 0;
+            setLoopCount(0);
+            setTimeout(animateSlider, 100); 
+          }, 20000); 
+        }
+      }
+    };
+
+    setTimeout(animateSlider, 100); 
+
+    return () => clearTimeout(animateSlider);
+  }, []);
+
   return (
     <>
       <h1 className='h1'>Mere end 300 virksomheder, benytter allerede systemet</h1>
       <div className="logo-slider-container">
-        <div className="logo-slider">
-          <img src={medShop} alt="logo" />
-          <img src={stillads} alt="logo" />
-          <img src={have} alt="logo" />
-          <img src={dentec} alt="logo" />
-          <img src={ibon} alt="logo" />
-          <img src={mebel} alt="logo" />
-          <img src={medShop} alt="logo" />
-          <img src={stillads} alt="logo" />
-          <img src={have} alt="logo" />
-          <img src={dentec} alt="logo" />
-          <img src={ibon} alt="logo" />
-          <img src={mebel} alt="logo" />
+        <div className="logo-slider" ref={sliderRef}>
+          {[medShop, stillads, have, dentec, ibon, mebel].map((logo, index) => (
+            <img key={index} src={logo} alt="logo" />
+          ))}
+          {[medShop, stillads, have, dentec, ibon, mebel].map((logo, index) => (
+            <img key={`dup-${index}`} src={logo} alt="logo" />
+          ))}
         </div>
       </div>
 

@@ -15,21 +15,12 @@
 .logo-slider {
   display: flex;
   justify-content: flex-start;
-  animation: slide 20s linear infinite;
+  width: 200%;
 }
 
 .logo-slider img {
   height: 50px;
   margin: 0 20px;
-}
-
-@keyframes slide {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%); 
-  }
 }
 
 .grey-line {
