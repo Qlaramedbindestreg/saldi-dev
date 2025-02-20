@@ -69,3 +69,43 @@
 .slider-control.next {
     right: 10px;
 }
+
+@media (max-width: 600px) {
+    .testimonials-container {
+        margin-top: 50px;
+        padding: 0 10px; 
+    }
+
+    .testimonial {
+        padding: 15px; 
+    }
+
+    .slider-control {
+        font-size: 1.5rem; 
+        left: 5px;
+        right: 5px;
+    }
+
+    .gradient-overlay {
+        width: 20px; 
+    }
+}
+
+
+@media (max-width: 900px) {
+    .testimonials-container {
+        margin-top: 70px;
+    }
+
+    .testimonial {
+        padding: 18px; 
+    }
+
+    .slider-control {
+        font-size: 1.8rem; 
+    }
+
+    .gradient-overlay {
+        width: 25px; 
+    }
+}

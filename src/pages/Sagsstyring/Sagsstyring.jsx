@@ -82,15 +82,15 @@ export default function Sagsstyring() {
 
          <section className='stillads-logoer'>
                 <h1 className='h1'>Danmarks største stillads og håndværksvirksomheder benytter allerede Saldi</h1>
-              <div className="logo-slider-container">
-                <div className="logo-slider">
+              <div className="stillads-logo-slider-container">
+                <div className="stillads-logo-slider">
                   <img src={herlev} alt="logo" />
                   <img src={sst} alt="logo" />
                   <img src={flow} alt="logo" />
                   <img src={bera} alt="logo" />
            
                 </div>
-                <div className="logo-slider" aria-hidden="true">
+                <div className="stillads-logo-slider" aria-hidden="true">
                 <img src={herlev} alt="logo" />
                   <img src={sst} alt="logo" />
                   <img src={flow} alt="logo" />

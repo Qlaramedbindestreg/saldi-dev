@@ -68,3 +68,43 @@
         }
     }
 }
+@media (max-width: 600px) {
+    .booking-container {
+        padding: 20px;
+        margin: 50px auto;
+        max-width: 90%;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .booking-form {
+        gap: 10px;
+
+        input, textarea {
+            font-size: 12px;
+            padding: 8px;
+        }
+    }
+}
+
+
+@media (max-width: 900px) {
+    .booking-container {
+        max-width: 80%;
+    }
+
+    h1 {
+        font-size: 19px;
+    }
+
+    button {
+        font-size: 15px;
+    }
+}

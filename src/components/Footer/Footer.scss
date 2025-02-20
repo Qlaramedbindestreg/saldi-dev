@@ -100,3 +100,101 @@ footer {
           
 }
 }
+
+@media (max-width: 600px) {
+    footer {
+        .footer-section-one {
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            
+            .contact-section {
+                text-align: center;
+                padding: 10px;
+            }
+
+            .footer-nav {
+                padding: 10px 20px;
+                margin-right: 0;
+                text-align: center;
+
+                nav ul {
+                    padding-left: 0;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    li {
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+
+        .footer-section-two {
+            flex-direction: column;
+            align-items: center;
+            padding: 20px 20px;
+            
+            img {
+                margin-bottom: 15px;
+            }
+
+            .social-media-section {
+                flex-direction: row;
+                justify-content: center;
+                margin-top: 10px;
+                gap: 15px;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 900px) {
+    footer {
+        .footer-section-one {
+            flex-direction: column;
+            padding: 20px;
+
+            .contact-section {
+                text-align: center;
+                padding: 15px;
+            }
+
+            .footer-nav {
+                padding: 15px;
+                margin-right: 0;
+                text-align: center;
+
+                nav ul {
+                    padding-left: 0;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    li {
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+
+        .footer-section-two {
+            padding: 20px;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            img {
+                margin-right: 20px;
+            }
+
+            .social-media-section {
+                flex-direction: row;
+                justify-content: center;
+                gap: 20px;
+            }
+        }
+    }
+}

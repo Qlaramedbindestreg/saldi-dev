@@ -7,6 +7,7 @@ import Booking from '../../components/Booking/Booking';
 import Counter from '../../components/Counter/Counter';
 
 import forsideBaggrund from '../../assets/forside-baggrund.jpg';
+import forsideVideo from '../../assets/forside-baggrund.mov';
 import cloudSoftware from '../../assets/cloud-software.jpg';
 import openSource from '../../assets/computer.jpg';
 
@@ -59,22 +60,27 @@ export default function Forside() {
   };
   return (
     <>
-      <main className="main-background" style={{ opacity }}>
-        <div className='overlay'></div>
-        <div className='main-wrapper'>
-          <div className='main-text-box'>
-            <h1>Softwareløsning til optimering af driften i din virksomed.</h1>
-            <h2>Webbaseret ERP, regnskab & økonomisystem.</h2>
-            <div className='button-container'>
-              <button>Få en uforpligtende vurdering</button>
-
-              <Link to={'/Løsninger'}>
+ <main className="main-background">
+      <video autoPlay loop muted playsInline className="background-video">
+        <source src={forsideVideo} type="video/mp4" />
+        Your browser does not support video.
+      </video>
+      
+      <div className="overlay"></div>
+      
+      <div className="main-wrapper">
+        <div className="main-text-box">
+          <h1>Softwareløsning til optimering af driften i din virksomhed.</h1>
+          <h2>Webbaseret ERP, regnskab & økonomisystem.</h2>
+          <div className="button-container">
+            <button>Få en uforpligtende vurdering</button>
+            <Link to={'/Løsninger'}>
               <button>Se løsninger</button>
-              </Link>
-            </div>
+            </Link>
           </div>
         </div>
-      </main>
+      </div>
+    </main>
       <Brancher />
       <Moduler />
       <Lovkrav />
