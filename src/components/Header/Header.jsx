@@ -1,6 +1,15 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { FaChevronDown, FaChevronRight } from 'react-icons/fa';
+import {
+  FaChartLine,       
+  FaBox,            
+  FaFolderOpen, 
+  FaShoppingCart,     
+  FaProjectDiagram,  
+  FaTools,     
+  FaUserTie, 
+  FaChevronDown         
+} from 'react-icons/fa';
 import Search from '../Search/Search';
 import LogIn from '../LogIn/LogIn';
 import './Header.scss';
@@ -52,19 +61,21 @@ export default function Header() {
     }, 10000);
   }}
 >
-  <Link to="/Løsninger">Løsninger <FaChevronDown /></Link>
+  <Link to="/Løsninger" >Løsninger <FaChevronDown className='nav-icon'/></Link>
   <ul
     className={`dropdown ${showLøsningerDropdown ? 'show' : ''}`}
     onMouseEnter={() => setShowLøsningerDropdown(true)}
     onMouseLeave={() => setShowLøsningerDropdown(false)}
   >
-    <li><FaChevronRight /> <Link to="/Løsninger/Økonomistyring">Økonomistyring</Link></li>
-    <li><FaChevronRight /> <Link to="/Løsninger/Lagerstyring">Lagerstyring</Link></li>
-    <li><FaChevronRight /> <Link to="/Løsninger/Sagsstyring">Sagsstyring</Link></li>
-    <li><FaChevronRight /> <Link to="/Løsninger/ButikWebshop">Butik & Webshop</Link></li>
-    <li><FaChevronRight /> <Link to="/Løsninger/Projektstyring">Projektstyring</Link></li>
-    <li><FaChevronRight /> <Link to="/Løsninger/Materialeudlejning">Materialeudlejning</Link></li>
-    <li><FaChevronRight /> <Link to="/Løsninger/Revisor">Revisor</Link></li>
+    <li><FaChartLine className='dropdown-icon' /> <Link to="/Løsninger/Økonomistyring">Økonomistyring</Link></li>
+    <li><FaBox className='dropdown-icon'  /> <Link to="/Løsninger/Lagerstyring">Lagerstyring</Link></li>
+    <li><FaFolderOpen className='dropdown-icon'  /> <Link to="/Løsninger/Sagsstyring">Sagsstyring</Link></li>
+    <li><FaShoppingCart className='dropdown-icon'  /> <Link to="/Løsninger/ButikWebshop">Butik & Webshop</Link></li>
+
+
+    <li><FaProjectDiagram className='dropdown-icon'  /> <Link to="/Løsninger/Projektstyring">Projektstyring</Link></li>
+    <li><FaTools className='dropdown-icon'  /> <Link to="/Løsninger/Materialeudlejning">Materialeudlejning</Link></li>
+    <li><FaUserTie className='dropdown-icon'  /> <Link to="/Løsninger/Revisor">Revisor</Link></li>
   </ul>
 </li>
 
