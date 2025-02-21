@@ -1,20 +1,23 @@
 @import '../../variables.scss';
 
-.h1 {
+.lovkrav-h1 {
    font-size: 20px;
    text-align: center;
-   margin: 70px 20px 0 20px;
-   padding: 15px;
+   margin: 70px 0 0 0;
+   padding: 50px 0 0 0;
+   font-weight: 10;
+   background-color: $light-grey;
    
 }
 .lovkrav-wrapper {
     display: flex;
     justify-content: center;
     padding: 35px;
-    background: linear-gradient(to bottom, rgba(88, 178, 237, 0), rgba(88, 178, 237, 1)); 
+    background-color: $light-grey;
    
     .big-check {
         color: $primary-blue;
+        margin: 35px;
     }
 
      .check-wrapper {

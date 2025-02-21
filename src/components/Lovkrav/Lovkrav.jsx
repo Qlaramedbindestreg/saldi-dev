@@ -6,7 +6,7 @@ import { IoShieldCheckmarkOutline } from "react-icons/io5";
 export default function Lovkrav() {
     return (
         <>
-        <h1 className='h1'>Vi sørger for at din virksomhed altid overholder nye lovkrav når du benytter vores finansielle software</h1>
+        <h1 className='lovkrav-h1'>Vi sørger for at din virksomhed altid overholder nye lovkrav når du benytter vores finansielle software</h1>
         <div className='lovkrav-wrapper'>
          <div className='check-wrapper'>
          <div className='check'>
