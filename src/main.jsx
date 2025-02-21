@@ -61,6 +61,10 @@ const router = createBrowserRouter([
        element: <Projektstyring category="Projektstyring" />,
       },
       {
+        path: '/Løsninger/Revisor',
+        element: <Revisor category="Revisor"/>,
+      },
+      {
         path: '/CRM',
         element: <CRM />,
       },
@@ -88,10 +92,7 @@ const router = createBrowserRouter([
         path: '/PriserFunktioner',
         element: <PriserFunktioner />,
       },
-      {
-        path: '/Revisor',
-        element: <Revisor />,
-      },
+  
       {
         path: '/Om',
         element: <Om />,

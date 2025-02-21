@@ -56,15 +56,15 @@ export default function Header() {
                 <li><Link to="/Løsninger/ButikWebshop">Butik & Webshop</Link></li>
                 <li><Link to="/Løsninger/Projektstyring">Projektstyring</Link></li>
                 <li><Link to="/Løsninger/Materialeudlejning">Materialeudlejning</Link></li>
+                <li><Link to="/Løsninger/Revisor">Revisor</Link></li>
               </ul>
             )}
           </li>
           
-                        <li><Link to="/Vejledninger">Vejledninger</Link></li>
-                        <li><Link to="/Brancher">Brancher</Link></li>
-                        <li><Link to="/PriserFunktioner">Priser & Funktioner</Link></li>
+          <li><Link to="/Vejledninger">Vejledninger</Link></li>
+          <li><Link to="/Brancher">Brancher</Link></li>
+          <li><Link to="/PriserFunktioner">Priser & Funktioner</Link></li>
                         <li><Link to="/Blog">Blog</Link></li>
-                        <li><Link to="/Revisor">Revisor</Link></li>
                         <li><Link to="/Om">Om</Link></li>
                         <li><Link to="/Kontakt">Kontakt</Link></li>
         </ul>
