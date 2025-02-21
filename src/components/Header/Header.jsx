@@ -60,9 +60,9 @@ export default function Header() {
             )}
           </li>
           
-          <li><Link to="/Vejledninger">Vejledninger</Link></li>
-          <li><Link to="/Brancher">Brancher</Link></li>
-          <li><Link to="/PriserFunktioner">Priser & Funktioner</Link></li>
+                        <li><Link to="/Vejledninger">Vejledninger</Link></li>
+                        <li><Link to="/Brancher">Brancher</Link></li>
+                        <li><Link to="/PriserFunktioner">Priser & Funktioner</Link></li>
                         <li><Link to="/Blog">Blog</Link></li>
                         <li><Link to="/Revisor">Revisor</Link></li>
                         <li><Link to="/Om">Om</Link></li>
