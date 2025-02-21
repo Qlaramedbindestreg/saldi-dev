@@ -91,6 +91,8 @@ header {
             position: relative;
       
             .dropdown {
+                display: grid;
+                grid-template-columns: 1fr 1fr; 
               position: absolute;
               top: 40px; 
               left: 0;
@@ -106,6 +108,7 @@ header {
     
             .dropdown.show {
               display: block;
+              display: grid;
             }
       
             .dropdown li {

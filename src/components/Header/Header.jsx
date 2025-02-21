@@ -49,7 +49,7 @@ export default function Header() {
   onMouseLeave={() => {
     setTimeout(() => {
       setShowLøsningerDropdown(false);
-    }, 500);
+    }, 10000);
   }}
 >
   <Link to="/Løsninger">Løsninger <FaChevronDown /></Link>
