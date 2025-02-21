@@ -7,147 +7,154 @@ header {
     left: 0;
     z-index: 1000;
     transition: all 0.3s ease;
-
+  
     .header-section-one {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      height: 50px;
+      background-color: $lighter-grey;
+      z-index: 2;
+      transition: transform 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
+  
+      img {
+        height: 40px;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+      }
+  
+      .header-actions {
         display: flex;
-        justify-content: space-between;
         align-items: center;
-        padding: 10px 20px;
-        height: 50px;
-        background-color: $lighter-grey;
-        z-index: 2;
-        transition: transform 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
-
-        img {
-            height: 40px;
-            transition: transform 0.3s ease, opacity 0.3s ease;
+  
+        a {
+          text-decoration: none;
         }
-
-        .header-actions {
-            display: flex;
-            align-items: center;
-            
-               a {
-                    text-decoration: none;
-                }
-
-            > * {
-                margin-left: 20px;
-            }
-
-            button {
-                border: none;
-                background-color: $secondary-blue;
-                color: $lighter-grey;
-                height: 70px;
-                padding: 10px 25px;
-                margin: 0 60px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                cursor: pointer;
-                
-
-             
-
-                &:hover {
-                    background-color: $green-color;
-                }
-            }
+  
+        > * {
+          margin-left: 20px;
         }
+  
+        button {
+          border: none;
+          background-color: $secondary-blue;
+          color: $lighter-grey;
+          height: 70px;
+          padding: 10px 25px;
+          margin: 0 60px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+  
+          &:hover {
+            background-color: $green-color;
+          }
+        }
+      }
     }
-
+  
     .header-section-two {
-        position: fixed;
-        top: 70px;
-        left: 0;
-        width: 100%;
-        height: 45px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px 30px;
-        background-color: $primary-blue;
-        z-index: 1;
-        transition: transform 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
-
-        .white-logo {
-            display: none;
-            height: 40px;
-        }
-
-        nav {
-            ul {
-                display: flex;
-                list-style: none;
-                padding: 0;
-                margin: 0;
-                margin-right: 110px;
-
-                li {
-                    margin-left: 20px;
-                    cursor: pointer;
-                    position: relative;
-
-                    .dropdown {
-                        position: absolute;
-                        top: 100%;
-                        left: 0;
-                        background: #fff;
-                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-                        display: none;
-                        list-style: none;
-                        padding: 10px 0;
-                    }
-
-                    &:hover .dropdown {
-                        display: block;
-                    }
-
-                    .dropdown li {
-                        padding: 10px 20px;
-                    }
-
-                    .dropdown li a {
-                        color: #333;
-                        text-decoration: none;
-                        display: block;
-                    }
-
-                    .dropdown li a:hover {
-                        color: $green-color;
-                    }
-                }
+      position: fixed;
+      top: 70px;
+      left: 0;
+      width: 100%;
+      height: 45px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 30px;
+      background-color: $primary-blue;
+      z-index: 1;
+      transition: transform 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
+  
+      .white-logo {
+        display: none;
+        height: 40px;
+      }
+  
+      nav {
+        ul {
+          display: flex;
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          margin-right: 110px;
+      
+          li {
+            margin-left: 20px;
+            cursor: pointer;
+            position: relative;
+      
+            .dropdown {
+              position: absolute;
+              top: 40px; 
+              left: 0;
+              width: 800px; 
+              background: #fff;
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+              display: none; 
+              list-style: none;
+              padding: 10px 0;
+              z-index: 1000; 
             }
-
-            a {
-                text-decoration: none;
-                color: $lighter-grey;
-
-                &:hover {
-                    color: $green-color;
-                }
+      
+    
+            .dropdown.show {
+              display: block;
             }
+      
+            .dropdown li {
+              padding: 10px 20px;
+              display: flex;
+              align-items: center;
+            }
+      
+            .dropdown li a {
+              color: #333;
+              text-decoration: none;
+              display: block;
+              margin-left: 10px;
+            }
+      
+            .dropdown li a:hover {
+              color: $green-color;
+            }
+          }
         }
-    }
-
-    &.scrolled .header-section-one {
+      }
+  
+        a {
+          text-decoration: none;
+          color: $lighter-grey;
+          display: flex;
+          align-items: center;
+  
+          &:hover {
+            color: $green-color;
+          }
+        }
+      }
+      &.scrolled .header-section-one {
         transform: translateY(-100%);
         opacity: 0;
         visibility: hidden;
-    }
-
-    &.scrolled .header-section-two {
+      }
+    
+      &.scrolled .header-section-two {
         top: 0;
+    
         .white-logo {
-            display: block;
+          display: block;
         }
+  }
     }
-}
+  
+
 
 
 @media (max-width: 600px) {
