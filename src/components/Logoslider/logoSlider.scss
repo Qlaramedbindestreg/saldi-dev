@@ -3,6 +3,9 @@
 .h1 {
   text-align: center;
   font-weight: 10;
+  font-size: 20px;
+  margin: 70px 0 0 0;
+  padding: 50px;
 }
 
 .logo-slider-container {
@@ -14,19 +17,16 @@
 
 .logo-slider {
   display: flex;
+  align-items: center;
   justify-content: flex-start;
-  width: 200%;
+  width: fit-content; 
+  gap: 0; 
+  will-change: transform;
 }
 
 .logo-slider img {
   height: 50px;
-  margin: 0 20px;
-}
-.h1 {
-  font-size: 20px;
-  text-align: center;
-  margin: 70px 0 0 0;
-  padding: 50px;
+  margin: 0 15px; 
 }
 
 .grey-line {
@@ -51,6 +51,7 @@
     margin-left: 10px;
   }
 }
+
 
 @media (max-width: 600px) {
 

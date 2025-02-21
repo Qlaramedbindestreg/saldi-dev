@@ -10,46 +10,63 @@ import './logoSlider.scss';
 
 export default function LogoSlider() {
   const sliderRef = useRef(null);
+  const containerRef = useRef(null);
   const [loopCount, setLoopCount] = useState(0);
+  const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+        }
+      },
+      { threshold: 0.5 } 
+    );
+
+    if (containerRef.current) {
+      observer.observe(containerRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
+    if (!isVisible || loopCount >= 10) return;
+
     const slider = sliderRef.current;
-    let count = 0;
+    if (!slider) return;
+
+    const sliderWidth = slider.scrollWidth / 2; 
 
     const animateSlider = () => {
-      if (slider) {
-        count++;
-        setLoopCount(count);
+      if (loopCount >= 10) return; 
 
-        if (count < 7) {
-          slider.style.transition = 'transform 20s linear'; 
-          slider.style.transform = `translateX(-50%)`;
-        } else {
-      
-          setTimeout(() => {
-            slider.style.transition = 'none';
-            slider.style.transform = 'translateX(0)';
-            count = 0;
-            setLoopCount(0);
-            setTimeout(animateSlider, 100); 
-          }, 20000); 
-        }
-      }
+      slider.style.transition = 'transform 20s linear';
+      slider.style.transform = `translateX(-${sliderWidth}px)`;
+
+      setTimeout(() => {
+        slider.style.transition = 'none';
+        slider.style.transform = 'translateX(0)';
+        setLoopCount((prev) => prev + 1); 
+        setTimeout(animateSlider, 100);
+      }, 20000);
     };
 
-    setTimeout(animateSlider, 100); 
+    setTimeout(animateSlider, 100);
 
-    return () => clearTimeout(animateSlider);
-  }, []);
+    return () => setLoopCount(0); 
+  }, [isVisible, loopCount]);
 
   return (
     <>
       <h1 className='h1'>Mere end 300 virksomheder, benytter allerede systemet</h1>
-      <div className="logo-slider-container">
+      <div className="logo-slider-container" ref={containerRef}>
         <div className="logo-slider" ref={sliderRef}>
           {[medShop, stillads, have, dentec, ibon, mebel].map((logo, index) => (
             <img key={index} src={logo} alt="logo" />
           ))}
+      
           {[medShop, stillads, have, dentec, ibon, mebel].map((logo, index) => (
             <img key={`dup-${index}`} src={logo} alt="logo" />
           ))}
