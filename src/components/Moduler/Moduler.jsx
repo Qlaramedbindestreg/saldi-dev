@@ -50,6 +50,26 @@ export default function Moduler() {
               </button>
             </Link>
        </div>
+       <div className='modul'>
+        <h1>Materialeudlejning</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus exercitationem tempore deserunt quae sapiente. Consequuntur quod repellendus a unde architecto!
+            </p>
+            <Link to="/Løsninger/Materialeudlejning">
+              <button>Læs mere om materialeudlejning
+                <IoIosArrowRoundForward size={20}/>
+              </button>
+            </Link>
+       </div>
+       <div className='modul'>
+        <h1>Projektstyring</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus dignissimos aut exercitationem voluptatibus, nam molestiae veniam laudantium dolorem autem quae.
+            </p>
+            <Link to="/Løsninger/Projektstyring">
+              <button>Læs mere om projektstyring
+                <IoIosArrowRoundForward size={20}/>
+              </button>
+            </Link>
+       </div>
         </div>
         </>
     )
