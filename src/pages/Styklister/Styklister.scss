@@ -313,12 +313,8 @@
     }
   }
   
-  // Responsive adjustments
-  @media (max-width: 1024px) {
-    .intro-section, .features-section, .considerations-section, .cta-section {
-      margin: 50px;
-    }
-  }
+
+
   
   @media (max-width: 768px) {
     .intro-section, .features-section, .considerations-section, .cta-section {
@@ -379,7 +375,7 @@
     }
   }
   
-  // Responsive adjustments
+
   @media (max-width: 768px) {
     .features-section {
       margin: 30px;

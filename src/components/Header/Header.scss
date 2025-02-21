@@ -90,7 +90,6 @@ header {
             cursor: pointer;
             position: relative;
             
-            
             .nav-icon {
                 display: flex;
                 align-items: center;
@@ -98,6 +97,7 @@ header {
                 margin-left: 5px;
                 
             }
+
       
             .dropdown {
               display: grid;
@@ -149,6 +149,17 @@ header {
               }
             }
       
+          }
+          li:hover {
+            color: $green-color;
+      
+            a {
+              color: $green-color;
+            }
+      
+            .nav-icon {
+              color: $green-color;
+            }
           }
         }
       }

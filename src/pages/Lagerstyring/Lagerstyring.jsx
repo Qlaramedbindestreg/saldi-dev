@@ -82,17 +82,17 @@ const handleSubmit = (e) => {
         <p>Med Saldi får du et brugervenligt og effektivt system, der hjælper dig med at styre alle aspekter af lagerstyring og regnskab på én platform.</p>
       </section>
 
-      <section className="report-section">
-        <div className="report-block left-text">
+      <section className="lagerstyring-report-section">
+        <div className="lagerstyring-report-block lagerstyring-left-text">
           <img src={indsigt} alt="lageroversigt" />
-          <div className="text-content">
+          <div className="lagerstyring-text-content">
             <h1>Synkronisering af varelager & webshop</h1>
             <p>Let det administrative arbejde og lad strømlinede integrationer håndtere varebeholdningen og synkronisering af kostpriser og lagerbeholdning i real time.</p>
           </div>
         </div>
-        <div className="report-block left-image">
+        <div className="lagerstyring-report-block lagerstyring-left-image">
           <img src={synkronisering} alt="rapport" />
-          <div className="text-content">
+          <div className="lagerstyring-text-content">
             <h1>Få strategisk indsigt og reducér risici med skræddersyede rapporter</h1>
             <p>Via dataudtræk i systemet kan få adgang til unikke rapporter på dit varelager, med data til imødekommelse af forpligtelser og strategi planlægning.</p>
           </div>
