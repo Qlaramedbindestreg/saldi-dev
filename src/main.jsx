@@ -16,7 +16,10 @@ import Blog from './pages/Blog/Blog.jsx';
 import CRM from './pages/CRM/CRM';
 import POSsystem from './pages/POS-system/POSsystem';
 import Styklister from './pages/Styklister/Styklister';
-
+import Brancher from './pages/Brancher/Brancher';
+import Materialeudlejning from './pages/Materialeudlejning/Materialeudlejning.jsx';
+import PriserFunktioner from './pages/PriserFunktioner/PriserFunktioner.jsx';
+import Projektstyring from './pages/Projektstyring/Projektstyring.jsx';
 
 import './main.scss';
 
@@ -50,6 +53,14 @@ const router = createBrowserRouter([
         element: <ButikWebshop category="Butik & Webshop" />,
       },
       {
+        path: '/Løsninger/Materialeudlejning',
+        element: <Materialeudlejning category="Materialeudlejning" />,
+      },
+      {
+       path: '/Løsninger/Projektstyring',
+       element: <Projektstyring category="Projektstyring" />,
+      },
+      {
         path: '/CRM',
         element: <CRM />,
       },
@@ -68,6 +79,14 @@ const router = createBrowserRouter([
       {
         path: '/Blog',
         element: <Blog type="Blog" />,
+      },
+      {
+        path: '/Brancher',
+        element: <Brancher type="Brancher"/>,
+      },
+      {
+        path: '/PriserFunktioner',
+        element: <PriserFunktioner />,
       },
       {
         path: '/Revisor',
