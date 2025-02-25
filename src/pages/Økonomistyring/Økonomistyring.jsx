@@ -50,11 +50,14 @@ const handleSubmit = (e) => {
 
 
       <section className="økonomistyring-module">
+      <div className='line'></div>
         <h2>Det rette system til håndtering af regnskab og økonomi</h2>
         <p>
           Administrering af din virksomheds økonomi i Saldi sikrer dig stabil arbejdsgang og reduceret risiko. Vores bæredygtige bogføringssoftware samler alt regnskabsdata i et enkelt og brugervenligt system.
         </p>
       </section>
+
+      <div className='line'></div>
 
       <h2 className="økonomi-modules-heading">Moduler til regnskabsstyring</h2>
       <section className="økonomi-modules-grid">

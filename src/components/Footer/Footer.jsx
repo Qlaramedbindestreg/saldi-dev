@@ -13,7 +13,7 @@ export default function Footer() {
                 Kontakt
             </h1>
             <h2>
-            Telefon: <a href="tel:+45902208">+45 90 22 08</a><br />
+            Telefon: <a href="tel:+45902208">+45 46 90 22 08</a><br />
             Mail: <a href="mailto:info@saldi.dk">info@saldi.dk</a><br />
                 Adresse: Østergade 24B <br />
                 3200 Helsinge <br />
