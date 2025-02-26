@@ -98,18 +98,58 @@ const handleSubmit = (e) => {
             <li>Grafisk budget sammenligning med reelle tal </li>
           </ul>
         </div>
+        </section>
         
         <div className='deb-cred-card'>
+  <div className="deb-cred-text">
+    <div className='line'></div>
+    <h3>Debitorstyring</h3>
+  </div>
+  <p>Hold overblik på hele processen fra tilbud til ordre og fakturering, 
+     med indblik i dækningsgrader & status på lagerbeholdning.</p>
+</div>
+
+<section className="økonomi-modules-grid">
         <div className="deb-cred-content">
-          <h3>Debitorstyring</h3>
-          <p>Hold overblik på hele processen fra tilbud til ordre og fakturering, med indblik i dækningsgrader & status på lagerbeholdning.</p>
+        <div className="økonomi-module-card">
+          <h3>
+          Ordrestyring</h3>
+          <ul>
+            <li>Logistikstyring</li>
+            <li>Tilbudsmodul </li>
+            <li>Synkronisering af lagerstatus & dækningsgrader</li>
+            <li>Faktureringsmodul</li>
+            <li>Faktura opsætning</li>
+            <li>Genfakturering/abonnementstyring </li>
+          </ul>
         </div>
-        <div className="deb-cred-content">
-          <h3>Kreditorstyring</h3>
-          <p>Strategisk styring af dine kreditorer med henblik på besparelse og optimering af dine processer med automatiserede indkøbsforslag.</p>
+        <div className="økonomi-module-card">
+          <h3>
+         Konti</h3>
+          <ul>
+            <li>Opret debitorer</li>
+            <li>Faktureringshistorik </li>
+            <li>CRM </li>
+            <li>Brugerdefinerede søgevalg</li>
+            <li>Prioriteringslister</li>
+           
+          </ul>
+        </div>
+        <div className="økonomi-module-card">
+          <h3>
+          Rapporter</h3>
+          <ul>
+            <li>Åbne poster</li>
+            <li>Kontosalg </li>
+            <li>Top 100 debitorer</li>
+            <li>SAF-T rapporter</li>
+            <li>Skræddersyede rapporter</li>
+       
+          </ul>
         </div>
         </div>
-      </section>
+        </section>
+
       
       <section className="report-section">
         <div className="report-block left-text">

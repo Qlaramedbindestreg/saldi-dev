@@ -102,7 +102,6 @@
   margin-left: 20px;
 
   
-  
   .line {
     height: 25px;
     width: 5px;
@@ -140,10 +139,9 @@
 
 
     h3 {
-      font-size: 1.5rem;
-      margin-bottom: 10px;
+      font-size: 20px;
+      margin-left: 10px;
     }
-
   
       ul {
         list-style: none;
@@ -177,26 +175,43 @@
   }
 
 
-.deb-cred-card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 30px;
-  gap: 30px;
-
-
-  .deb-cred-content {
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  .deb-cred-card {
     display: flex;
     flex-direction: column;
-    align-items: center;
-   
-    width: 100%;
-     padding: 30px;
-   border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
   
-}
-}
+    .deb-cred-text {
+      display: flex;
+      align-items: center;
+    }
+  
+    .line {
+      height: 25px;
+      width: 5px;
+      background-color: $secondary-blue;
+      margin-left: 20px;
+    }
+  
+    h3 {
+      font-size: 20px;
+      margin-left: 10px;
+    }
+  
+    p {
+      margin-left: 25px;
+      max-width: 600px;  
+    }
+  }
+  
+  
+  .deb-cred-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+  }
 
 .report-section {
   text-align: center;
