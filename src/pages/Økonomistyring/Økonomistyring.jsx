@@ -50,21 +50,27 @@ const handleSubmit = (e) => {
 
 
       <section className="økonomistyring-module">
+         <div className='økonomistyrings-module-text'>
       <div className='line'></div>
         <h2>Det rette system til håndtering af regnskab og økonomi</h2>
+        </div>
         <p>
           Administrering af din virksomheds økonomi i Saldi sikrer dig stabil arbejdsgang og reduceret risiko. Vores bæredygtige bogføringssoftware samler alt regnskabsdata i et enkelt og brugervenligt system.
         </p>
+       
       </section>
 
+      <div className='økonomi-modules-heading-container'>
       <div className='line'></div>
-
       <h2 className="økonomi-modules-heading">Moduler til regnskabsstyring</h2>
-      <section className="økonomi-modules-grid">
-        <div className="økonomi-module-card">
+     </div>
+        <div className='økonomi-modules-text'>
           <h3>Finans</h3>
           <p>Totalt overblik på forretningskritisk regnskabsdata, udarbejd budgettering, træk datarige rapporter og få strategisk indblik i din forretnings fremgang og administrér bogholderiet i et brugervenligt regnskabsmodul.</p>
         </div>
+
+      <section className="økonomi-modules-grid">
+ 
         <div className="økonomi-module-card">
           <h3>Regnskab</h3>
           <ul>
@@ -72,6 +78,24 @@ const handleSubmit = (e) => {
             <li>Totalt overblik på alle kontonumre, indtægter & udgifter</li>
             <li>Grafisk budget sammenligning med reelle tal</li>
             <li>Rapporter: Træk standard- og skræddersyede rapporter</li>
+          </ul>
+        </div>
+        <div className="økonomi-module-card">
+          <h3>Rapporter</h3>
+          <ul>
+            <li>Træk standard rapporter med få klik</li>
+            <li>Skræddersyede rapporter </li>
+            <li>Afstem bank </li>
+            <li>Se kontrolspor </li>
+          </ul>
+        </div>
+        <div className="økonomi-module-card">
+          <h3>
+          Kassekladder</h3>
+          <ul>
+            <li>Kassekladder, bilagsscan</li>
+            <li>Totalt overblik på indtægter & udgifter </li>
+            <li>Grafisk budget sammenligning med reelle tal </li>
           </ul>
         </div>
         
