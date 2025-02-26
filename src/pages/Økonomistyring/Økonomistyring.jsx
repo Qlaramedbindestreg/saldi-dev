@@ -105,8 +105,7 @@ const handleSubmit = (e) => {
     <div className='line'></div>
     <h3>Debitorstyring</h3>
   </div>
-  <p>Hold overblik på hele processen fra tilbud til ordre og fakturering, 
-     med indblik i dækningsgrader & status på lagerbeholdning.</p>
+  <p>Hold overblik på hele processen fra tilbud til ordre og fakturering, med indblik i dækningsgrader & status på lagerbeholdning. Træk detaljerede rapporter på dine debitorer, salgsstatistikker, betalingslister og få tilpasset unikke rapporter..</p>
 </div>
 
 <section className="økonomi-modules-grid">
@@ -143,6 +142,53 @@ const handleSubmit = (e) => {
             <li>Kontosalg </li>
             <li>Top 100 debitorer</li>
             <li>SAF-T rapporter</li>
+            <li>Skræddersyede rapporter</li>
+       
+          </ul>
+        </div>
+        </div>
+        </section>
+
+        <div className='deb-cred-card'>
+  <div className="deb-cred-text">
+    <div className='line'></div>
+    <h3>Kreditorstyring</h3>
+  </div>
+  <p>Strategisk styring af dine kreditorer med henblik på besparelse og optimering af din processer med automatiserede indkøbsforslag. Overskueligt og enkelt overblik på ordre og fakturaer. Hold overblik på alle udgifter og vedhæft bilag med Saldi bilagsapp.</p>
+</div>
+
+<section className="økonomi-modules-grid">
+        <div className="deb-cred-content">
+        <div className="økonomi-module-card">
+          <h3>
+          
+            Ordrer</h3>
+          <ul>
+            <li>Indkøbsforslag</li>
+            <li>Ordrer overblik </li>
+            <li>Faktura overblik</li>
+            <li>Samlede udgfifter</li>
+            <li>Brugerdefineret sortering </li>
+          
+          </ul>
+        </div>
+        <div className="økonomi-module-card">
+          <h3>
+         Konti</h3>
+          <ul>
+            <li>Kontioversigtr</li>
+            <li>Brugerdefineret kreditorvisning	</li>
+            <li>Kreditoroprettelse med brugerdefinerede felter </li>
+           
+          </ul>
+        </div>
+        <div className="økonomi-module-card">
+          <h3>
+          Rapporter</h3>
+          <ul>
+            <li>Åbne poster</li>
+            <li>Betalingslister </li>
+            <li>Top 100</li>
             <li>Skræddersyede rapporter</li>
        
           </ul>
