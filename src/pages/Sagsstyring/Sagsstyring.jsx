@@ -58,15 +58,21 @@ export default function Sagsstyring() {
       </div>
     </div>
       
-      <section className="sagsstyring-module">
-        <h2>Sagsstyring designet til stillads - og håndværksbranchen</h2>
-        <p>
-          Let administrationen med en sømløs integration mellem regnskab, sagsstyring, akkord og lønsystemer. Saldi sikre en optimeret drift med en moderne cloud-baseret software der forbedrer kommunikation mellem afdelinger og medarbejdere.
-        </p>
-      </section>
+    <section className="sagsstyring-module">
+  <div className="sagsstyring-text">
+    <div className="line"></div>
+    <h2>Sagsstyring designet til stillads - og håndværksbranchen</h2>
+  </div>
+  <p>
+    Let administrationen med en sømløs integration mellem regnskab, sagsstyring, akkord og lønsystemer. 
+    Saldi sikre en optimeret drift med en moderne cloud-baseret software der forbedrer kommunikation 
+    mellem afdelinger og medarbejdere.
+  </p>
+</section>
 
 
-      <h2 className="sag-modules-heading">Moduler til Sagsstyring</h2>
+
+  
       <section className="sag-modules-grid">
   <div className="sag-module-card">
     <FaChartLine className="module-icon" />
