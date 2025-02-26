@@ -133,11 +133,17 @@ export default function Sagsstyring() {
 </div>
 
      <section className="report-section">
-        <h1>Lønafregning</h1>
-        <h3>Systemet bogfører automatisk dine salg</h3>
+
   <div className="report-grid">
     <div className="report-block">
       <FaDollarSign className="report-icon" />
+      <h2>Lønafregning</h2>
+      <p>Systemet bogfører automatisk dine salg</p>
+    
+    </div>
+
+    <div className="report-block">
+      <FaClipboardList className="report-icon" />
       <h2>Omkostningsstyring</h2>
       <p>Få overblik på hvad der sælger bedst, så du kan optimere dine processer og få bedre resultater.</p>
     </div>
@@ -151,11 +157,7 @@ export default function Sagsstyring() {
       <h2>Rapportering</h2>
       <p>Analyser din virksomheds data med detaljerede rapporter for at forbedre din strategi.</p>
     </div>
-    <div className="report-block">
-      <FaClipboardList className="report-icon" />
-      <h2>Ordrehåndtering</h2>
-      <p>Strømlin dine ordreprocesser for en mere effektiv arbejdsflow og højere kundetilfredshed.</p>
-    </div>
+
   </div>
 </section>
 
