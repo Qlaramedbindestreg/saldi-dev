@@ -118,7 +118,7 @@ export default function Sagsstyring() {
   <div className="sagsstyring-module-card">
   <div className="sagsstyring-module-content">
     <img src={erp} alt="ERP" className="sagsstyring-module-image" />
-    <div className="module-text">
+    <div className="sags-module-text">
       <h3>Fleksible løsninger</h3>
       <ul>
         <li><FaCheckCircle className="check-icon" /> Tilgængeligt på alt hardware</li>
@@ -132,28 +132,28 @@ export default function Sagsstyring() {
   </div>
 </div>
 
-     <section className="report-section">
+     <section className="sag-report-section">
 
-  <div className="report-grid">
-    <div className="report-block">
-      <FaDollarSign className="report-icon" />
+  <div className="sag-report-grid">
+    <div className="sag-report-block">
+      <FaDollarSign className="sag-report-icon" />
       <h2>Lønafregning</h2>
       <p>Systemet bogfører automatisk dine salg</p>
     
     </div>
 
-    <div className="report-block">
-      <FaClipboardList className="report-icon" />
+    <div className="sag-report-block">
+      <FaClipboardList className="sag-report-icon" />
       <h2>Omkostningsstyring</h2>
       <p>Få overblik på hvad der sælger bedst, så du kan optimere dine processer og få bedre resultater.</p>
     </div>
-    <div className="report-block">
-      <FaBoxOpen className="report-icon" />
+    <div className="sag-report-block">
+      <FaBoxOpen className="sag-report-icon" />
       <h2>Lagerstyring</h2>
       <p>Hold styr på hvornår du løber tør for varer, så du altid kan opretholde en effektiv drift.</p>
     </div>
-    <div className="report-block">
-      <FaChartPie className="report-icon" />
+    <div className="sag-report-block">
+      <FaChartPie className="sag-report-icon" />
       <h2>Rapportering</h2>
       <p>Analyser din virksomheds data med detaljerede rapporter for at forbedre din strategi.</p>
     </div>

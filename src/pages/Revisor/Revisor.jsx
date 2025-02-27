@@ -53,7 +53,7 @@ export default function Revisor() {
   <div className="line"></div>
   <h2>Hvorfor vælge Saldi's revisorløsning og regnskabsprogram?</h2>
 </div>
-<p>Vi har gjort revision så overskueligt og tilgængeligt som muligt.</p>
+<p className="revisor-p">Vi har gjort revision så overskueligt og tilgængeligt som muligt.</p>
           <section className="revisor-section">
 
 
