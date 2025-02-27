@@ -213,24 +213,24 @@
 
   .lagerstyring-left-image {
     flex-direction: row-reverse;
+    
+    h1 {
+      font-size: 1.8rem;
+      color: $primary-blue;
+      margin-bottom: 15px;
+    }
+    
+    p {
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+    
+    .lagerstyring-left-image {
+      flex-direction: row-reverse;
+    }
   }
 }
 
-
-h1 {
-  font-size: 1.8rem;
-  color: $primary-blue;
-  margin-bottom: 15px;
-}
-
-p {
-  font-size: 1rem;
-  line-height: 1.5;
-}
-
-.lagerstyring-left-image {
-  flex-direction: row-reverse;
-}
 
 
 
