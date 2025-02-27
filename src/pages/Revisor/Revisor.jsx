@@ -49,9 +49,13 @@ export default function Revisor() {
           </div>
 
 
-          <section className="revisor-section">
+<div className="revisor-heading-container">
+  <div className="line"></div>
   <h2>Hvorfor vælge Saldi's revisorløsning og regnskabsprogram?</h2>
-  <p>Vi har gjort revision så overskueligt og tilgængeligt som muligt.</p>
+</div>
+<p>Vi har gjort revision så overskueligt og tilgængeligt som muligt.</p>
+          <section className="revisor-section">
+
 
   <div className="revisor-benefits">
     <div className="benefit">
@@ -69,8 +73,10 @@ export default function Revisor() {
 </section>
 
             <section className="revisor-details">
-                <FaCalculator className="detail-icon" />
+                <div className="revisor-details-text">
+                <div className="line"></div>
                 <h2>Et rigtigt regnskabsprogram til revisorere</h2>
+                </div>
                 <p>Saldi's regnskabsprogram og revisorløsning er ikke bare et simpelt og hurtigt system,</p>
                 <p>men det er også skabt med et direkte formål; at give revisorer og bogholdere et veludviklet & solidt bogførings- og regnskabsprogram.</p>
             </section>

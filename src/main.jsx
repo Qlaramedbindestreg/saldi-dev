@@ -20,6 +20,7 @@ import Brancher from './pages/Brancher/Brancher';
 import Materialeudlejning from './pages/Materialeudlejning/Materialeudlejning.jsx';
 import PriserFunktioner from './pages/PriserFunktioner/PriserFunktioner.jsx';
 import Projektstyring from './pages/Projektstyring/Projektstyring.jsx';
+import NewTab from './components/LogIn/newTab';
 
 import './main.scss';
 
@@ -100,6 +101,10 @@ const router = createBrowserRouter([
       {
         path: '/Kontakt',
         element: <Kontakt />,
+      },
+      {
+        path: '/newTab',
+        element: <NewTab />,
       },
     ],
   },

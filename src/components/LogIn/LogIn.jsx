@@ -1,7 +1,9 @@
 import { CiLogin } from "react-icons/ci";
+import { useNavigate } from "react-router-dom";
 import './LogIn.scss';
 
 export default function LogIn() {
+  const navigate = useNavigate();
 
   const fetchData = async () => {
     try {
@@ -10,13 +12,12 @@ export default function LogIn() {
         throw new Error(`HTTP error! Status: ${response.status}`);
       }
       const result = await response.json();
-      
-    
-      const newTab = window.open("/new-page", "_blank");
-      
+
 
       localStorage.setItem("fetchedData", JSON.stringify(result));
-      
+
+ 
+      navigate("/newTab", { target: "_blank" }); 
     } catch (err) {
       console.error("Error fetching data: ", err.message);
     }
@@ -26,7 +27,7 @@ export default function LogIn() {
     <>
       <div className="login-container">
         <CiLogin />
-        <p onClick={fetchData} style={{ cursor: 'pointer' }}>
+        <p onClick={fetchData} style={{ cursor: "pointer" }}>
           Log Ind
         </p>
       </div>
