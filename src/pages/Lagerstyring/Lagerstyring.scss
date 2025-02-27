@@ -177,6 +177,7 @@
 .lagerstyring-report-section {
   text-align: center;
   margin: 40px 0;
+  background-color: #eef4ff;
 
   .lagerstyring-report-block {
     display: flex;
@@ -184,6 +185,7 @@
     justify-content: center;
     gap: 20px;
     margin-bottom: 40px;
+    padding: 40px;
 
     img {
       max-width: 300px;

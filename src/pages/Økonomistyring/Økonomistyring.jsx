@@ -197,22 +197,23 @@ const handleSubmit = (e) => {
         </section>
 
       
-      <section className="report-section">
-        <div className="report-block left-text">
-          <img src={oversigt} alt="oversigt" />
-          <div className="text-content">
-            <h1>Grafiske oversigter bidrager med strategiske planlægningsfordele</h1>
-            <p>Skab sammenhæng mellem budgetplanlægning, indtægter og udgifter med automatiserede grafer og bevar kontrollen af dine forretnings udvikling.</p>
-          </div>
-        </div>
-        <div className="report-block left-image">
-          <img src={rapport} alt="rapport" />
-          <div className="text-content">
-            <h1>Skræddersyede rapporter bidrager med strategisk indsigt</h1>
-            <p >Planlæg strategier og budgetter med rapporter på alt regnskabsdata og opnå konkurrencemæssige fordele.</p>
-          </div>
-        </div>
-      </section>
+        <section className="report-section">
+  <div className="report-block left-text">
+    <img src={oversigt} alt="oversigt" />
+    <div className="text-content">
+      <h1>Grafiske oversigter bidrager med strategiske planlægningsfordele</h1>
+      <p>Skab sammenhæng mellem budgetplanlægning, indtægter og udgifter med automatiserede grafer og bevar kontrollen af dine forretnings udvikling.</p>
+    </div>
+  </div>
+  <div className="report-block left-image">
+    <img src={rapport} alt="rapport" />
+    <div className="text-content">
+      <h1>Skræddersyede rapporter bidrager med strategisk indsigt</h1>
+      <p>Planlæg strategier og budgetter med rapporter på alt regnskabsdata og opnå konkurrencemæssige fordele.</p>
+    </div>
+  </div>
+</section>
+
      
      <div className='form-div' id="form-section"></div>
       <section 
