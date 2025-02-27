@@ -97,14 +97,21 @@ export default function ButikWebshop() {
           </div>
         </div>
             
-      <section className="butik-module">
-        <h2>Forbind fysisk butikssalg, E-salg, lager & regnskab i ét system</h2>
-        <p>
-          Reducér omkostninger med automatiseret synkronisering mellem hver afdeling i realtid. POS-løsninger designet til styring af butikskæder, lager, regnskab & webshop på én samlet platform.
-        </p>
-      </section>
+        <section className="butik-module">
+         <div className="butik-heading">
+         <div className="line"></div>
+         <h2>Forbind fysisk butikssalg, E-salg, lager & regnskab i ét system</h2>
+         </div>
+         <p>
+         Reducér omkostninger med automatiseret synkronisering mellem hver afdeling i realtid. POS-løsninger designet til styring af butikskæder, lager, regnskab & webshop på én samlet platform.
+         </p>
+        </section>
 
-      <h2 className="web-modules-heading">Moduler til Butik & Webshop</h2>
+
+        <div className="web-modules-heading-container">
+  <div className="line"></div>
+  <h2 className="web-modules-heading">Moduler til Butik & Webshop</h2>
+</div>
       <section className="web-modules-grid">
         <div className="web-module-card">
         <FaChartLine className='web-icon'/>
