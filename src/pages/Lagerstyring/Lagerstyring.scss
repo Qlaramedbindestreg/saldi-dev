@@ -62,27 +62,47 @@
   }
 }
 
-.lagerstyring-module {
-  margin: 70px;
-  text-align: center;
+.lagerstyring-heading-container {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  margin-top: 50px;
 
-  h2 {
-    font-size: 2rem;
-    color: $primary-blue;
-    margin-bottom: 20px;
+  .line {
+    height: 25px;
+    width: 5px;
+    background-color: $secondary-blue;
+    margin-left: 20px;
   }
 
-  p {
-    font-size: 1.1rem;
-    line-height: 1.6;
+  h2 {
+    font-size: 20px;
+    margin-left: 10px;
   }
 }
 
-.lagerstyring-modules-heading {
-  text-align: center;
-  font-size: 2rem;
-  color: $primary-blue;
+.lagerstyring-module p {
+  margin-left: 55px;
+  max-width: 600px;
+}
+
+.lagerstyring-modules-heading-container {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
   margin-top: 50px;
+
+  .line {
+    height: 25px;
+    width: 5px;
+    background-color: $secondary-blue;
+    margin-left: 20px;
+  }
+
+  h2 {
+    font-size: 20px;
+    margin-left: 10px;
+  }
 }
 
 .lagerstyring-modules-grid {
@@ -122,56 +142,96 @@
 }
 
 .lagerstyring-systemvalg {
-  margin: 70px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-left: 20px;
+  max-width: 800px;
 
-  h2 {
-    font-size: 2rem;
-    color: $primary-blue;
-    margin-bottom: 20px;
+  .lagerstyring-heading-container {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+
+    .line {
+      height: 25px;
+      width: 5px;
+      background-color: $secondary-blue;
+      margin-right: 10px;
+    }
+
+    h2 {
+      font-size: 20px;
+      margin: 0;
+    }
   }
 
   p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    margin-bottom: 20px;
+    margin-left: 55px;
+    max-width: 600px;
+    font-size: 16px;
+    line-height: 1.4;
   }
 }
 
 .lagerstyring-report-section {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-  margin: 50px;
+  text-align: center;
+  margin: 40px 0;
 
   .lagerstyring-report-block {
     display: flex;
     align-items: center;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
+
+    img {
+      max-width: 300px;
+      border-radius: 10px;
+    }
 
     .lagerstyring-text-content {
-      margin-left: 20px;
-    }
+      max-width: 600px;
+      text-align: left;
 
-    h1 {
-      font-size: 1.8rem;
-      color: $primary-blue;
-      margin-bottom: 15px;
-    }
+      h1 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+        color: $primary-blue;  
+      }
 
-    p {
-      font-size: 1rem;
-      line-height: 1.5;
+      p {
+        font-size: 1.2rem;
+        line-height: 1.5;
+      }
     }
   }
 
-  .lagerstyrig-left-image {
+  .lagerstyring-left-text {
+    flex-direction: row;
+  }
+
+  .lagerstyring-left-image {
     flex-direction: row-reverse;
   }
 }
+
+
+h1 {
+  font-size: 1.8rem;
+  color: $primary-blue;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.lagerstyring-left-image {
+  flex-direction: row-reverse;
+}
+
 
 
 .form-div {

@@ -48,39 +48,56 @@ const handleSubmit = (e) => {
           </div>
         </div>
 
-      <section className="lagerstyring-module">
-          <h2>Det rette system til håndtering af varelageret</h2>
-          <p>
-            Forbind processer og mennesker på tværs af flere lokationer i Saldi. Opnå en bæredygtig forsyningskæde med automatiserede digitale transaktioner og synkronisering mellem afdelinger.
-          </p>
-        </section>
+        <section className="lagerstyring-module">
+  <div className="lagerstyring-heading-container">
+    <div className="line"></div>
+    <h2>Det rette system til håndtering af varelageret</h2>
+       </div>
+       <p>
+    Forbind processer og mennesker på tværs af flere lokationer i Saldi. Opnå en bæredygtig forsyningskæde med automatiserede digitale transaktioner og synkronisering mellem afdelinger.
+       </p>
+       </section>
 
-        <h2 className="lagerstyring-modules-heading">Lagerstyringsmoduler</h2>
-        <section className="lagerstyring-modules-grid">
-          <div className="lagerstyring-module-card">
-            <h3>Lagerstatus</h3>
-            <p>Få overblik på lagerbeholdning af samtlige varer direkte fra vareoversigten. Opret hurtige søgninger, tilføj nemt ændringer til varer og kontrollér hvilke medarbejdere som kan se/ændre i de individuelle produkter.</p>
-          </div>
-          <div className="lagerstyring-module-card">
-            <h3>Automatiske bestillingsforslag</h3>
-            <p>Let det administrative arbejde ved at sætte minimumsbeholdning på dine varer i Saldi, lad systemet minde dig om hvornår det er tid til at genbestille, så du altid er sikker på at kunne imødekomme dine kunders bestillinger.</p>
-          </div>
-          <div className="lagerstyring-module-card">
-            <h3>Styklister</h3>
-            <p>Let administrationen med et intuitivt system som automatisk synkronisere beholdningen af de individuelle komponenter med resten af systemet. Håndter samle elementer og andre komponenter på individuelle varenumre.</p>
-          </div>
-          <div className="lagerstyring-module-card">
-            <h3>Batchkontrol</h3>
-            <p>Kontrollér sammenhæng mellem alle købs- og salgsordrer, vær samtidig sikker på at regnskabets lagerbeholdning er i overensstemmelse med varelagerets købsværdi.</p>
-          </div>
-        </section>
 
-      <section className="lagerstyring-systemvalg">
-        <h2>Valg af det rette lagerstyringssystem</h2>
-        <p>Det er vigtigt at vælge et system, der passer til din virksomheds størrelse og behov. Saldi er skalerbart, hvilket betyder, at det kan vokse med din virksomhed, og det kan integreres problemfrit med eksisterende regnskabssystemer, CRM-løsninger og e-handelsplatforme. På den måde opnår du et mere effektivt og økonomisk bæredygtigt system.</p>
-        <h2>Vælg Saldi til en effektiv lagerstyring</h2>
-        <p>Med Saldi får du et brugervenligt og effektivt system, der hjælper dig med at styre alle aspekter af lagerstyring og regnskab på én platform.</p>
-      </section>
+       <div className="lagerstyring-modules-heading-container">
+  <div className="line"></div>
+  <h2 className="lagerstyring-modules-heading">Lagerstyringsmoduler</h2>
+</div>
+
+<section className="lagerstyring-modules-grid">
+  <div className="lagerstyring-module-card">
+    <h3>Lagerstatus</h3>
+    <p>Få overblik på lagerbeholdning af samtlige varer direkte fra vareoversigten. Opret hurtige søgninger, tilføj nemt ændringer til varer og kontrollér hvilke medarbejdere som kan se/ændre i de individuelle produkter.</p>
+  </div>
+  <div className="lagerstyring-module-card">
+    <h3>Automatiske bestillingsforslag</h3>
+    <p>Let det administrative arbejde ved at sætte minimumsbeholdning på dine varer i Saldi, lad systemet minde dig om hvornår det er tid til at genbestille, så du altid er sikker på at kunne imødekomme dine kunders bestillinger.</p>
+  </div>
+  <div className="lagerstyring-module-card">
+    <h3>Styklister</h3>
+    <p>Let administrationen med et intuitivt system som automatisk synkronisere beholdningen af de individuelle komponenter med resten af systemet. Håndter samle elementer og andre komponenter på individuelle varenumre.</p>
+  </div>
+  <div className="lagerstyring-module-card">
+    <h3>Batchkontrol</h3>
+    <p>Kontrollér sammenhæng mellem alle købs- og salgsordrer, vær samtidig sikker på at regnskabets lagerbeholdning er i overensstemmelse med varelagerets købsværdi.</p>
+  </div>
+</section>
+
+
+<section className="lagerstyring-systemvalg">
+  <div className="lagerstyring-heading-container">
+    <div className="line"></div>
+    <h2>Valg af det rette lagerstyringssystem</h2>
+  </div>
+  <p>Det er vigtigt at vælge et system, der passer til din virksomheds størrelse og behov. Saldi er skalerbart, hvilket betyder, at det kan vokse med din virksomhed, og det kan integreres problemfrit med eksisterende regnskabssystemer, CRM-løsninger og e-handelsplatforme. På den måde opnår du et mere effektivt og økonomisk bæredygtigt system.</p>
+
+  <div className="lagerstyring-heading-container">
+    <div className="line"></div>
+    <h2>Vælg Saldi til en effektiv lagerstyring</h2>
+  </div>
+  <p>Med Saldi får du et brugervenligt og effektivt system, der hjælper dig med at styre alle aspekter af lagerstyring og regnskab på én platform.</p>
+</section>
+
 
       <section className="lagerstyring-report-section">
         <div className="lagerstyring-report-block lagerstyring-left-text">
