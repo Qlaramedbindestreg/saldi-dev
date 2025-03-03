@@ -34,9 +34,7 @@ export default function Header() {
 
     if (showLøsningerDropdown) {
       document.addEventListener('click', handleClickOutside);
-    } else {
-      document.removeEventListener('click', handleClickOutside);
-    }
+    } 
 
     return () => {
       document.removeEventListener('click', handleClickOutside);
@@ -59,36 +57,60 @@ export default function Header() {
       <div className='header-section-two'>
         <Link to="/"><img src={whiteLogo} alt="white logo" className='white-logo' /></Link>
         <nav>
-          <ul>
-          <li className="løsninger-dropdown">
-        <Link
-         to="#"
-         onClick={(e) => {
-          e.preventDefault();
-         setShowLøsningerDropdown((prev) => !prev);
-         }}
-         >
-          Løsninger <FaChevronDown className='nav-icon' />
-         </Link>
-              <ul className={`dropdown ${showLøsningerDropdown ? 'show' : ''}`}>
-                <li><FaChartLine className='dropdown-icon' /> <Link to="/Løsninger/Økonomistyring">Økonomistyring</Link></li>
-                <li><FaBox className='dropdown-icon' /> <Link to="/Løsninger/Lagerstyring">Lagerstyring</Link></li>
-                <li><FaFolderOpen className='dropdown-icon' /> <Link to="/Løsninger/Sagsstyring">Sagsstyring</Link></li>
-                <li><FaShoppingCart className='dropdown-icon' /> <Link to="/Løsninger/ButikWebshop">Butik & Webshop</Link></li>
-                <li><FaProjectDiagram className='dropdown-icon' /> <Link to="/Løsninger/Projektstyring">Projektstyring</Link></li>
-                <li><FaTools className='dropdown-icon' /> <Link to="/Løsninger/Materialeudlejning">Materialeudlejning</Link></li>
-                <li><FaUserTie className='dropdown-icon' /> <Link to="/Løsninger/Revisor">Revisor</Link></li>
-              </ul>
+          <ul> 
+            <li className="løsninger-dropdown">
+              {/* Clickable Link to Toggle Dropdown */}
+              <Link
+                to="javascript:void(0)"
+                onClick={(e) => {
+                  e.preventDefault(); 
+                  setShowLøsningerDropdown((prev) => !prev);
+                }}
+                className="dropdown-trigger"
+              >
+                Produkter <FaChevronDown className='nav-icon' />
+              </Link>
+
+              {/* Dropdown Menu */}
+              {showLøsningerDropdown && (
+                <ul className="dropdown show">
+                  {/* Column 1 - Saldi ERP */}
+                  <div className="dropdown-column">
+                    <h4>Saldi ERP</h4>
+                    <li><FaBox className='dropdown-icon' /> <Link to="/Løsninger/Lagerstyring">Lagerstyring</Link></li>
+                    <li><FaShoppingCart className='dropdown-icon' /> <Link to="/Løsninger/Ordrestyring">Ordrestyring</Link></li>
+                    <li><FaProjectDiagram className='dropdown-icon' /> <Link to="/Løsninger/Projektstyring">Projektstyring</Link></li>
+                    <li><FaUserTie className='dropdown-icon' /> <Link to="/Løsninger/CRM">CRM</Link></li>
+                  </div>
+
+                  {/* Column 2 - Regnskab */}
+                  <div className="dropdown-column">
+                    <h4>Regnskab</h4>
+                    <li><FaChartLine className='dropdown-icon' /> <Link to="/Løsninger/Økonomistyring">Økonomistyring</Link></li>
+                    <li><FaUserTie className='dropdown-icon' /> <Link to="/Løsninger/Revisor">Revisor</Link></li>
+                  </div>
+
+                  {/* Column 3 - Løsninger */}
+                  <div className="dropdown-column">
+                    <h4>Løsninger</h4>
+                    <li><FaFolderOpen className='dropdown-icon' /> <Link to="/Løsninger/Mini">Mini</Link></li>
+                    <li><FaTools className='dropdown-icon' /> <Link to="/Løsninger/Basis">Basis</Link></li>
+                    <li><FaProjectDiagram className='dropdown-icon' /> <Link to="/Løsninger/Professionelt">Professionelt</Link></li>
+                    <li><FaBox className='dropdown-icon' /> <Link to="/Løsninger/ERP">ERP</Link></li>
+                  </div>
+                </ul>
+              )}
             </li>
 
+            {/* Other menu items */}
             <li><Link to="/Vejledninger">Vejledninger</Link></li>
             <li><Link to="/Brancher">Brancher</Link></li>
             <li><Link to="/PriserFunktioner">Priser & Funktioner</Link></li>
             <li><Link to="/Blog">Blog</Link></li>
             <li><Link to="/Om">Om</Link></li>
             <li><Link to="/Kontakt">Kontakt</Link></li>
-          </ul>
-        </nav>
+          </ul> 
+        </nav> 
       </div>
     </header>
   );
