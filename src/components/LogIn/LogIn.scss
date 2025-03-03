@@ -6,6 +6,10 @@
     gap: 10px; 
     cursor: pointer;
 
+    a {
+        color: #333;
+    }
+
     &:hover {
                        
         color: $green-color; 
@@ -15,10 +19,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     height: 100vh; 
     background-color: $lighter-grey; 
     padding: 20px;
     box-sizing: border-box;
+
+    h2 {
+        margin-bottom: 50px;
+        margin-top: -50px;
+    }
 
     .button-container {
         display: flex;
