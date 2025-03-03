@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import {
   FaChartLine, FaBox, FaFolderOpen, FaShoppingCart,
-  FaProjectDiagram, FaTools, FaUserTie, FaChevronDown
+  FaProjectDiagram, FaTools, FaUserTie, FaChevronDown, FaChevronRight
 } from 'react-icons/fa';
 import Search from '../Search/Search';
 import LogIn from '../LogIn/LogIn';
@@ -34,7 +34,9 @@ export default function Header() {
 
     if (showLøsningerDropdown) {
       document.addEventListener('click', handleClickOutside);
-    } 
+    } else {
+      document.removeEventListener('click', handleClickOutside);
+    }
 
     return () => {
       document.removeEventListener('click', handleClickOutside);
@@ -57,7 +59,7 @@ export default function Header() {
       <div className='header-section-two'>
         <Link to="/"><img src={whiteLogo} alt="white logo" className='white-logo' /></Link>
         <nav>
-          <ul> 
+          <ul>
             <li className="løsninger-dropdown">
               {/* Clickable Link to Toggle Dropdown */}
               <Link
@@ -77,26 +79,26 @@ export default function Header() {
                   {/* Column 1 - Saldi ERP */}
                   <div className="dropdown-column">
                     <h4>Saldi ERP</h4>
-                    <li> <Link to="/Løsninger/Lagerstyring">Lagerstyring</Link></li>
-                    <li> <Link to="/Løsninger/Ordrestyring">Ordrestyring</Link></li>
-                    <li> <Link to="/Løsninger/Projektstyring">Projektstyring</Link></li>
-                    <li><Link to="/Løsninger/CRM">CRM</Link></li>
+                    <li> <FaChevronRight className="arrow-icon" /> <Link to="/Løsninger/Lagerstyring">Lagerstyring</Link></li>
+                    <li> <FaChevronRight className="arrow-icon" /> <Link to="/Løsninger/Ordrestyring">Ordrestyring</Link></li>
+                    <li> <FaChevronRight className="arrow-icon" /> <Link to="/Løsninger/Projektstyring">Projektstyring</Link></li>
+                    <li> <FaChevronRight className="arrow-icon" /> <Link to="/Løsninger/CRM">CRM</Link></li>
                   </div>
 
                   {/* Column 2 - Regnskab */}
                   <div className="dropdown-column">
                     <h4>Regnskab</h4>
-                    <li> <Link to="/Løsninger/Økonomistyring">Økonomistyring</Link></li>
-                    <li><Link to="/Løsninger/Revisor">Revisor</Link></li>
+                    <li> <FaChevronRight className="arrow-icon" /> <Link to="/Løsninger/Økonomistyring">Økonomistyring</Link></li>
+                    <li> <FaChevronRight className="arrow-icon" /> <Link to="/Løsninger/Revisor">Revisor</Link></li>
                   </div>
 
                   {/* Column 3 - Løsninger */}
                   <div className="dropdown-column">
                     <h4>Løsninger</h4>
-                    <li><Link to="/Løsninger/Mini">Mini</Link></li>
-                    <li><Link to="/Løsninger/Basis">Basis</Link></li>
-                    <li> <Link to="/Løsninger/Professionelt">Professionelt</Link></li>
-                    <li> <Link to="/Løsninger/ERP">ERP</Link></li>
+                    <li> <FaChevronRight className="arrow-icon" /> <Link to="/Løsninger/Mini">Mini</Link></li>
+                    <li> <FaChevronRight className="arrow-icon" /> <Link to="/Løsninger/Basis">Basis</Link></li>
+                    <li> <FaChevronRight className="arrow-icon" /> <Link to="/Løsninger/Professionelt">Professionelt</Link></li>
+                    <li> <FaChevronRight className="arrow-icon" /> <Link to="/Løsninger/ERP">ERP</Link></li>
                   </div>
                 </ul>
               )}
@@ -109,8 +111,8 @@ export default function Header() {
             <li><Link to="/Blog">Blog</Link></li>
             <li><Link to="/Om">Om</Link></li>
             <li><Link to="/Kontakt">Kontakt</Link></li>
-          </ul> 
-        </nav> 
+          </ul>
+        </nav>
       </div>
     </header>
   );
