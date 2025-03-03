@@ -97,18 +97,18 @@ header {
           }
 
           .dropdown {
-            display: none; // Hidden by default
+            display: none; 
             position: absolute;
             top: 40px;
-            left: 0;
-            width: 900px; // Adjust width for three columns
+            left: -200px;
+            width: 900px; 
             background: #fff;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             list-style: none;
             padding: 20px;
             z-index: 1000;
             display: grid;
-            grid-template-columns: repeat(3, 1fr); // Three equal columns
+            grid-template-columns: repeat(3, 1fr); 
             gap: 20px;
 
             &.show {
@@ -124,9 +124,9 @@ header {
             .dropdown-column h4 {
               font-size: 18px;
               font-weight: bold;
-              color: #000; 
+              color: $primary-blue; 
               margin-bottom: 10px;
-              pointer-events: none; // Makes the headline un-clickable
+              pointer-events: none; 
             }
 
             li {
@@ -135,7 +135,7 @@ header {
               align-items: center;
 
               a {
-                color: #333;
+                color: $primary-blue;
                 text-decoration: none;
                 margin-left: 10px;
 
@@ -159,13 +159,18 @@ header {
             padding: 10px 20px;
             display: flex;
             align-items: center;
+            .dropdown-icon {
+              color: $primary-blue;
+            }   
           }
 
           .dropdown li a {
-            color: #333;
+            color: $primary-blue;
             text-decoration: none;
             display: block;
             margin-left: 10px;
+
+         
 
             &:hover {
               color: $green-color;
