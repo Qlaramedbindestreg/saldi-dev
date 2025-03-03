@@ -1,4 +1,5 @@
 @import '../../variables.scss';
+
 .login-container {
     display: flex;
     align-items: center;
@@ -6,30 +7,40 @@
     cursor: pointer;
     position: relative;
   
-    a {
+    p {
+      margin: 0;
       color: #333;
+      font-size: 16px;
     }
   
     &:hover {
-      color: $green-color;
+      color: $green-color; 
     }
   }
   
-  .dropdown-menu {
-    position: absolute; 
-    top: 35px;
-    left: 0; 
+  .log-in-dropdown-menu {
+    position: absolute;
+    top: 35px; 
+    left: 0;
     background-color: #fff;
     border: 1px solid #ccc;
-    border-radius: 5px;
+
     padding: 10px;
     width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
-  .dropdown-menu button {
+  .scrollable-buttons {
+    max-height: 300px; 
+    overflow-y: auto; 
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .scrollable-buttons button {
     background-color: $primary-blue; 
     color: #fff;
     padding: 10px;
@@ -38,18 +49,25 @@
     border-radius: 5px;
     cursor: pointer;
     text-align: left;
+    width: 190px;
+   
   
     &:hover {
-      background-color: $green-color;
+      background-color: $green-color; 
+      
     }
   }
   
-  .dropdown-menu button:focus {
-    outline: none;
+  .scrollable-buttons::-webkit-scrollbar {
+    width: 6px;
   }
   
-  .loading-message {
-    font-size: 14px;
-    color: #888;
+  .scrollable-buttons::-webkit-scrollbar-thumb {
+    background-color: $green-color;
+    border-radius: 3px;
+  }
+  
+  .scrollable-buttons::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
   }
   

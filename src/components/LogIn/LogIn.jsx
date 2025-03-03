@@ -5,18 +5,15 @@ import './LogIn.scss';
 export default function LogIn() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [loading, setLoading] = useState(false);
-  const dropdownRef = useRef(null); // Reference to the dropdown menu
+  const dropdownRef = useRef(null); 
 
-  // Close the dropdown if the user clicks outside
   useEffect(() => {
     const handleClickOutside = (event) => {
-      // Check if the click is outside of the dropdown
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-        setDropdownOpen(false);
+        setDropdownOpen(false); 
       }
     };
 
-    // Add event listener when the dropdown is open
     if (dropdownOpen) {
       document.addEventListener("click", handleClickOutside);
     } else {
@@ -24,7 +21,7 @@ export default function LogIn() {
     }
 
     return () => {
-      document.removeEventListener("click", handleClickOutside);
+      document.removeEventListener("click", handleClickOutside); 
     };
   }, [dropdownOpen]);
 
@@ -37,9 +34,8 @@ export default function LogIn() {
       }
       const result = await response.json();
       localStorage.setItem("fetchedData", JSON.stringify(result));
-
       alert("Data fetched successfully!");
-      setDropdownOpen(false); // Close dropdown after button click
+      setDropdownOpen(false); 
     } catch (err) {
       console.error("Error fetching data: ", err.message);
       alert("There was an error fetching the data.");
@@ -53,30 +49,48 @@ export default function LogIn() {
       <CiLogin />
       <p
         onClick={(e) => {
-          e.stopPropagation(); // Prevent the click event from propagating
-          setDropdownOpen((prev) => !prev); // Toggle the dropdown visibility
+          e.stopPropagation(); 
+          setDropdownOpen((prev) => !prev); 
         }}
         style={{ cursor: "pointer" }}
       >
         Log Ind
       </p>
 
-      {/* Dropdown Menu */}
       {dropdownOpen && (
-        <div className="dropdown-menu" ref={dropdownRef}>
-          <button onClick={() => fetchData("https://undefined-link.com/api/login?product=SaldiERP")}>
-            Saldi ERP
-          </button>
-          <button onClick={() => fetchData("https://undefined-link.com/api/login?product=SaldiProfessionel")}>
-            Saldi Professionel
-          </button>
-          <button onClick={() => fetchData("https://undefined-link.com/api/login?product=SaldiPOS")}>
-            Saldi POS
-          </button>
+        <div className="log-in-dropdown-menu" ref={dropdownRef}>
+
+          <div className="scrollable-buttons">
+            <button onClick={() => fetchData("https://undefined-link.com/api/login?product=SaldiERP")}>
+              Saldi ERP
+            </button>
+            <button onClick={() => fetchData("https://undefined-link.com/api/login?product=SaldiProfessionel")}>
+              Saldi Professionel
+            </button>
+            <button onClick={() => fetchData("https://undefined-link.com/api/login?product=SaldiPOS")}>
+              Saldi POS
+            </button>
+
+            <button onClick={() => fetchData("https://undefined-link.com/api/login?product=Mini")}>
+              Mini
+            </button>
+            <button onClick={() => fetchData("https://undefined-link.com/api/login?product=IDA")}>
+              IDA
+            </button>
+            <button onClick={() => fetchData("https://undefined-link.com/api/login?product=Rotary")}>
+              Rotary
+            </button>
+            <button onClick={() => fetchData("https://undefined-link.com/api/login?product=Demo")}>
+              Demo
+            </button>
+            <button onClick={() => fetchData("https://undefined-link.com/api/login?product=Stillads")}>
+              Stillads
+            </button>
+          </div>
         </div>
       )}
 
-      {/* Loading Message */}
+
       {loading && <p>Loading...</p>}
     </div>
   );
