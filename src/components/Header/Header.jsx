@@ -77,26 +77,26 @@ export default function Header() {
                   {/* Column 1 - Saldi ERP */}
                   <div className="dropdown-column">
                     <h4>Saldi ERP</h4>
-                    <li><FaBox className='dropdown-icon' /> <Link to="/Løsninger/Lagerstyring">Lagerstyring</Link></li>
-                    <li><FaShoppingCart className='dropdown-icon' /> <Link to="/Løsninger/Ordrestyring">Ordrestyring</Link></li>
-                    <li><FaProjectDiagram className='dropdown-icon' /> <Link to="/Løsninger/Projektstyring">Projektstyring</Link></li>
-                    <li><FaUserTie className='dropdown-icon' /> <Link to="/Løsninger/CRM">CRM</Link></li>
+                    <li> <Link to="/Løsninger/Lagerstyring">Lagerstyring</Link></li>
+                    <li> <Link to="/Løsninger/Ordrestyring">Ordrestyring</Link></li>
+                    <li> <Link to="/Løsninger/Projektstyring">Projektstyring</Link></li>
+                    <li><Link to="/Løsninger/CRM">CRM</Link></li>
                   </div>
 
                   {/* Column 2 - Regnskab */}
                   <div className="dropdown-column">
                     <h4>Regnskab</h4>
-                    <li><FaChartLine className='dropdown-icon' /> <Link to="/Løsninger/Økonomistyring">Økonomistyring</Link></li>
-                    <li><FaUserTie className='dropdown-icon' /> <Link to="/Løsninger/Revisor">Revisor</Link></li>
+                    <li> <Link to="/Løsninger/Økonomistyring">Økonomistyring</Link></li>
+                    <li><Link to="/Løsninger/Revisor">Revisor</Link></li>
                   </div>
 
                   {/* Column 3 - Løsninger */}
                   <div className="dropdown-column">
                     <h4>Løsninger</h4>
-                    <li><FaFolderOpen className='dropdown-icon' /> <Link to="/Løsninger/Mini">Mini</Link></li>
-                    <li><FaTools className='dropdown-icon' /> <Link to="/Løsninger/Basis">Basis</Link></li>
-                    <li><FaProjectDiagram className='dropdown-icon' /> <Link to="/Løsninger/Professionelt">Professionelt</Link></li>
-                    <li><FaBox className='dropdown-icon' /> <Link to="/Løsninger/ERP">ERP</Link></li>
+                    <li><Link to="/Løsninger/Mini">Mini</Link></li>
+                    <li><Link to="/Løsninger/Basis">Basis</Link></li>
+                    <li> <Link to="/Løsninger/Professionelt">Professionelt</Link></li>
+                    <li> <Link to="/Løsninger/ERP">ERP</Link></li>
                   </div>
                 </ul>
               )}
