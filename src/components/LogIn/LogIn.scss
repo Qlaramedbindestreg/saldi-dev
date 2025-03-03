@@ -1,61 +1,55 @@
 @import '../../variables.scss';
-
 .login-container {
     display: flex;
-    align-items: center; 
-    gap: 10px; 
-    cursor: pointer;
-
-    a {
-        color: #333;
-    }
-
-    &:hover {
-                       
-        color: $green-color; 
-        }
-}
-.new-tab {
-    display: flex;
-    justify-content: center;
     align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    position: relative;
+  
+    a {
+      color: #333;
+    }
+  
+    &:hover {
+      color: $green-color;
+    }
+  }
+  
+  .dropdown-menu {
+    position: absolute; 
+    top: 35px;
+    left: 0; 
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    width: 200px;
+    display: flex;
     flex-direction: column;
-    height: 100vh; 
-    background-color: $lighter-grey; 
-    padding: 20px;
-    box-sizing: border-box;
-
-    h2 {
-        margin-bottom: 50px;
-        margin-top: -50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dropdown-menu button {
+    background-color: $primary-blue; 
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: left;
+  
+    &:hover {
+      background-color: $green-color;
     }
-
-    .button-container {
-        display: flex;
-        flex-direction: column;
-        gap: 20px; 
-    }
-
-    .login-btn {
-        padding: 15px 30px;
-        font-size: 18px;
-        font-weight: 500;
-        text-align: center;
-        cursor: pointer;
-        background-color: $primary-blue;
-        color: $lighter-grey;
-        border: none;
-        border-radius: 5px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-        transition: background-color 0.3s ease, transform 0.3s ease;
-
-        &:hover {
-            background-color: $green-color; 
-            transform: translateY(-3px); 
-        }
-
-        &:focus {
-            outline: none;
-        }
-    }
-}
+  }
+  
+  .dropdown-menu button:focus {
+    outline: none;
+  }
+  
+  .loading-message {
+    font-size: 14px;
+    color: #888;
+  }
+  
