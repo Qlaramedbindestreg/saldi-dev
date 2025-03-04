@@ -59,31 +59,32 @@ export default function LogIn() {
 
       {dropdownOpen && (
         <div className="log-in-dropdown-menu" ref={dropdownRef}>
+          <h3>Klik på din type af regnskab for at logge ind</h3>
 
           <div className="scrollable-buttons">
-            <button onClick={() => fetchData("https://undefined-link.com/api/login?product=SaldiERP")}>
+            <button onClick={() => fetchData("https://undefined-link.com/api/login?product=SaldiERP")} className="scrollable-button">
               Saldi ERP
             </button>
-            <button onClick={() => fetchData("https://undefined-link.com/api/login?product=SaldiProfessionel")}>
+            <button onClick={() => fetchData("https://undefined-link.com/api/login?product=SaldiProfessionel")} className="scrollable-button">
               Saldi Professionel
             </button>
-            <button onClick={() => fetchData("https://undefined-link.com/api/login?product=SaldiPOS")}>
+            <button onClick={() => fetchData("https://undefined-link.com/api/login?product=SaldiPOS")} className="scrollable-button">
               Saldi POS
             </button>
 
-            <button onClick={() => fetchData("https://undefined-link.com/api/login?product=Mini")}>
+            <button onClick={() => fetchData("https://undefined-link.com/api/login?product=Mini")} className="scrollable-button">
               Mini
             </button>
-            <button onClick={() => fetchData("https://undefined-link.com/api/login?product=IDA")}>
+            <button onClick={() => fetchData("https://undefined-link.com/api/login?product=IDA")} className="scrollable-button">
               IDA
             </button>
-            <button onClick={() => fetchData("https://undefined-link.com/api/login?product=Rotary")}>
+            <button onClick={() => fetchData("https://undefined-link.com/api/login?product=Rotary")} className="scrollable-button">
               Rotary
             </button>
-            <button onClick={() => fetchData("https://undefined-link.com/api/login?product=Demo")}>
+            <button onClick={() => fetchData("https://undefined-link.com/api/login?product=Demo")} className="scrollable-button">
               Demo
             </button>
-            <button onClick={() => fetchData("https://undefined-link.com/api/login?product=Stillads")}>
+            <button onClick={() => fetchData("https://undefined-link.com/api/login?product=Stillads")} className="scrollable-button">
               Stillads
             </button>
           </div>
