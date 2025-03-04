@@ -56,7 +56,7 @@ export default function Brancher() {
                 onClick={() => setShowMore(!showMore)}
                 className='branche-button'
               >
-                {showMore ? 'Vis færre' : 'Vis flere'}
+                {showMore ? 'Vis færre...' : 'Vis flere...'}
               </button>
             </div>
           </>

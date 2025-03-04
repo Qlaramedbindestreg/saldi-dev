@@ -50,11 +50,12 @@
   }
   
   .branche-button {
-    padding: 10px;
     margin: auto;
-    background-color: $primary-blue; 
+    padding: 10px;
+  
+    background: none;
     border: none;
-    color: $lighter-grey;
+    color: $primary-blue;
     display: flex;
   
 
