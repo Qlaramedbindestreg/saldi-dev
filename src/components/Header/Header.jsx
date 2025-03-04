@@ -47,8 +47,17 @@ export default function Header() {
     <header className={scrolled ? 'scrolled' : ''}>
       <div className='header-section-one'>
         <Link to="/"><img src={logo} alt="logo" /></Link>
+
+        <nav className='nav-section-one'>
+          <ul>
+            <li><Link to="/ERP">ERP</Link></li>
+            <li><Link to="/Regnskab">Regnskab</Link></li>
+            <li><Link to="/POS">POS</Link></li>
+          </ul>
+        </nav>
+
         <div className='header-actions'>
-          <Search />
+         
           <LogIn />
           <Link to="/Løsninger">
             <button>Kom i gang</button>
@@ -58,10 +67,10 @@ export default function Header() {
 
       <div className='header-section-two'>
         <Link to="/"><img src={whiteLogo} alt="white logo" className='white-logo' /></Link>
-        <nav>
+        <nav className='nav-section-two'>
           <ul>
             <li className="løsninger-dropdown">
-              {/* Clickable Link to Toggle Dropdown */}
+          
               <Link
                 to="javascript:void(0)"
                 onClick={(e) => {
@@ -73,10 +82,10 @@ export default function Header() {
                 Produkter <FaChevronDown className='nav-icon' />
               </Link>
 
-              {/* Dropdown Menu */}
+           
               {showLøsningerDropdown && (
                 <ul className="dropdown show">
-                  {/* Column 1 - Saldi ERP */}
+            
                   <div className="dropdown-column">
                     <h4>Saldi ERP</h4>
                     <li> <FaChevronRight className="arrow-icon" /> <Link to="/Løsninger/Lagerstyring">Lagerstyring</Link></li>
@@ -85,14 +94,14 @@ export default function Header() {
                     <li> <FaChevronRight className="arrow-icon" /> <Link to="/Løsninger/CRM">CRM</Link></li>
                   </div>
 
-                  {/* Column 2 - Regnskab */}
+               
                   <div className="dropdown-column">
                     <h4>Regnskab</h4>
                     <li> <FaChevronRight className="arrow-icon" /> <Link to="/Løsninger/Økonomistyring">Økonomistyring</Link></li>
                     <li> <FaChevronRight className="arrow-icon" /> <Link to="/Løsninger/Revisor">Revisor</Link></li>
                   </div>
 
-                  {/* Column 3 - Løsninger */}
+                
                   <div className="dropdown-column">
                     <h4>Løsninger</h4>
                     <li> <FaChevronRight className="arrow-icon" /> <Link to="/Løsninger/Mini">Mini</Link></li>
@@ -104,7 +113,7 @@ export default function Header() {
               )}
             </li>
 
-            {/* Other menu items */}
+         
             <li><Link to="/Vejledninger">Vejledninger</Link></li>
             <li><Link to="/Brancher">Brancher</Link></li>
             <li><Link to="/PriserFunktioner">Priser & Funktioner</Link></li>
